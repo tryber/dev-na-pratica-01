@@ -1,0 +1,41 @@
+{
+  "posts": [
+  {
+    "id": 1,
+    "date": { "day": 7, "month": 12, "year": 2024 },
+    "name": "Lisan al Gaib",
+    "picture": "link",
+    "description": "big text",
+    "github": "link",
+    "linkedin": "link",
+    "tags": [
+      "html",
+      "css",
+      "react",
+      "java",
+      "c#",
+      "python",
+      "backend",
+      "..."
+    ]
+  },
+  {
+    "id": 2,
+    "date": { "day": 9, "month": 1, "year": 2024 },
+    "name": "Muad'Dib",
+    "picture": "link",
+    "description": "big text",
+    "github": "link",
+    "linkedin": "link",
+    "tags": [
+      "html",
+      "css",
+      "react",
+      "java",
+      "c#",
+      "python",
+      "backend",
+      "..."
+    ]
+  }]
+}
