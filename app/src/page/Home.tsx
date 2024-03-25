@@ -1,6 +1,8 @@
 import React from 'react';
+import data from '../persistence/PersistenceHelper';
 
 function Home(): JSX.Element {
+  // console.log(data);
   return (
     <div>
       <h1>Hello</h1>
