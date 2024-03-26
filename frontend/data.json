@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "João Silva",
+    "image": "/joao-silva.jpeg",
+    "projects": [
+      {
+        "project": "Projeto XYZ",
+        "projectLink": "#"
+      }
+    ],
+    "achievements": [
+      {
+        "achievement": "Conquista ABC",
+        "achievementLink": "#"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Maria Santos",
+    "image": "/maria-santos.jpeg",
+    "projects": [
+      {
+        "project": "Outro Projeto",
+        "projectLink": "#"
+      }
+    ],
+    "achievements": [
+      {
+        "achievement": "Outra Conquista",
+        "achievementLink": "#"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Luisa Dias",
+    "image": "/luisa-dias.jpeg",
+    "projects": [
+      {
+        "project": "Outro Projeto",
+        "projectLink": "#"
+      }
+    ],
+    "achievements": [
+      {
+        "achievement": "Outra Conquista",
+        "achievementLink": "#"
+      }
+    ]
+  }
+]
