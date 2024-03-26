@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from '../components/Hearder';
+import data from '../persistence/PersistenceHelper';
 
 function Home(): JSX.Element {
+  // console.log(data);
   return (
     <>
       <Header />
