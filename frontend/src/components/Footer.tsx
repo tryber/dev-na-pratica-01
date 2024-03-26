@@ -8,8 +8,7 @@ const Footer: React.FC = () => {
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold mb-4">Footer Title</h2>
             <p className="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              vehicula vitae urna vel tincidunt.
+              Projeto desenvolvido pelo time: Reinaldo, Guilherme, Vitor, Leonardo, Marllon.
             </p>
           </div>
           <div className="md:w-1/2 mt-4 md:mt-0">

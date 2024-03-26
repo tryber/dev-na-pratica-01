@@ -1,16 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import data from "../../data.json";
 import Image from "next/image";
 import User from "@/types/User";
 import Project from "@/types/Project";
 import Achievement from "@/types/Achievement";
 
-const Card: React.FC = () => {
+const Card: React.FC<{ users: User[] }> = ({ users }) => {
   return (
     <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {data.map((user: User) => (
+        {users.map((user: User) => (
           <div
             key={user.id}
             className="bg-gray-800 p-4 rounded-lg shadow-black shadow-lg"
