@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = () => {
 
   return (
     <div>
-      <div className="fixed w-full shadow-xl h-20 z-[100] bg-blue-100">
+      <div className="fixed w-full shadow-xl h-14 z-[100] bg-white">
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
           <Link href="/">
             <Image src={logo} alt="Logo" width="50" height="5" />
@@ -25,21 +25,9 @@ const Header: React.FC<HeaderProps> = () => {
                 <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
               </Link>
 
-              <Link href="/">
+              <Link href="/history">
                 <li className="ml-10 text-sm uppercase hover:border-b">
-                  Projetos
-                </li>
-              </Link>
-
-              <Link href="/">
-                <li className="ml-10 text-sm uppercase hover:border-b">
-                  Sobre
-                </li>
-              </Link>
-
-              <Link href="/">
-                <li className="ml-10 text-sm uppercase hover:border-b">
-                  Contatos
+                  History
                 </li>
               </Link>
             </ul>
@@ -111,21 +99,9 @@ const Header: React.FC<HeaderProps> = () => {
                   </li>
                 </Link>
 
-                <Link href="/projetos">
+                <Link href="/history">
                   <li className="text-sm uppercase hover:border-b py-4">
-                    Projetos
-                  </li>
-                </Link>
-
-                <Link href="/sobre">
-                  <li className="text-sm uppercase hover:border-b py-4">
-                    Sobre
-                  </li>
-                </Link>
-
-                <Link href="/contato">
-                  <li className="text-sm uppercase hover:border-b py-4">
-                    Contatos
+                    History
                   </li>
                 </Link>
               </ul>
