@@ -3,7 +3,7 @@ import Header from '../components/Hearder';
 import data from '../persistence/PersistenceHelper';
 
 function Home(): JSX.Element {
-  // console.log(data);
+  console.log(data);
   return (
     <>
       <Header />
