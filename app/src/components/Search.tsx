@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Search(): JSX.Element {
-  const [filter, setFilter] = useState({
-    tipoDestaque: '',
-    stacks: '',
-  });
+  // const [filter, setFilter] = useState({
+  //   tipoDestaque: '',
+  //   stacks: '',
+  // });
   return (
     <section>
       <form>
