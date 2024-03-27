@@ -95,5 +95,5 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          branch: dev-next-project
           folder: frontend/dist   # Especifique o caminho correto para o diretório de implantação
