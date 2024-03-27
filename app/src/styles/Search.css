@@ -1,0 +1,45 @@
+.flex{
+  display: flex;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.justify{
+  justify-content: space-between;
+}
+
+.section{
+  background-color: green;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 70%;
+  margin: 20px auto
+}
+
+.form{
+  width: 70%;
+}
+
+.form-div{
+  margin: 0px 10px;
+}
+
+.div-buttons{
+  margin-right: 20px 
+}
+
+.select{
+  height: fit-content;
+  margin:auto;
+  margin-left: 5px;
+}
+
+.button{
+  margin:auto
+}
