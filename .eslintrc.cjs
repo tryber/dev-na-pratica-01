@@ -12,7 +12,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended'
     ],
-    ignorePatterns: ['dist', '.eslintrc.cjs', "vite.config.ts"],
+    ignorePatterns: ['dist', '.eslintrc.cjs', "vite.config.ts", "setupTests.ts", "tests/*"],
     'overrides': [
         {
             'env': {
