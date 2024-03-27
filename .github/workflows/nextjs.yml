@@ -94,6 +94,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          branch: dev-next-project
-          folder: frontend/dist   # Especifique o caminho correto para o diretório de implantação
+          token: ${{ secrets.GITHUB_TOKEN }}
+          timeout: 600000
+          error_count: 10
+          reporting_interval: 5000
+          artifact_name: github-pages
+          preview: false
