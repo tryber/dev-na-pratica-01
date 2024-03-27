@@ -1,8 +1,5 @@
-import React from "react";
-
-interface HeadlineProps {
-  title: string;
-}
+import HeadlineProps from '@/types/HeadlineProps';
+import React from 'react';
 
 const Headline: React.FC<HeadlineProps> = ({ title }) => {
   return (

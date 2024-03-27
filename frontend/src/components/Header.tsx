@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import logo from "../../public/1601633424-47922400748457936cb2b276d0c36c4682f131441c3cbb808e9fa91730160712-d_640.webp";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-interface HeaderProps {}
-
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
 
   const handleNav = () => {
@@ -17,7 +14,7 @@ const Header: React.FC<HeaderProps> = () => {
       <div className="fixed w-full shadow-xl h-14 z-[100] bg-white">
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
           <Link href="/">
-            <Image src={logo} alt="Logo" width="50" height="5" />
+            <Image src="logo-trybe.webp" alt="Logo" width="50" height="5" />
           </Link>
           <div>
             <ul className="hidden md:flex">
@@ -53,19 +50,19 @@ const Header: React.FC<HeaderProps> = () => {
         <div
           className={
             nav
-              ? " md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
-              : ""
+              ? ' md:hidden fixed left-0 top-0 w-full h-screen bg-black/70'
+              : ''
           }
         >
           <div
             className={
               nav
-                ? "fixed left-0 top-0 w-[75%] sm:w[60%] md:w[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-                : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+                ? 'fixed left-0 top-0 w-[75%] sm:w[60%] md:w[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+                : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
             }
           >
             <div className="flex justify-between w-full items-center">
-              <Image src={logo} alt="Logo" width="80" height="35" />
+              <Image src="logo-trybe.webp" alt="Logo" width="80" height="35" />
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Footer: React.FC = () => {
   return (
@@ -8,37 +8,50 @@ const Footer: React.FC = () => {
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold mb-4">Footer Title</h2>
             <p className="text-sm">
-              Projeto desenvolvido pelo time: Reinaldo, Guilherme, Vitor, Leonardo, Marllon.
+              Projeto desenvolvido pelo time: Reinaldo, Guilherme, Vitor,
+              Leonardo, Marllon.
             </p>
           </div>
           <div className="md:w-1/2 mt-4 md:mt-0">
             <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
             <ul className="flex flex-col md:flex-row">
               <li className="md:mr-4 mb-2 md:mb-0">
-                <a href="https://www.betrybe.com/"
+                <a
+                  href="https://www.betrybe.com/"
                   target="_blank"
-                  className="text-sm hover:text-gray-400">
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-gray-400"
+                >
                   Trybe
                 </a>
               </li>
               <li className="md:mr-4 mb-2 md:mb-0">
-                <a href="https://www.betrybe.com/cursos/programacao-fundamentos-front-end"
+                <a
+                  href="https://www.betrybe.com/cursos/programacao-fundamentos-front-end"
                   target="_blank"
-                  className="text-sm hover:text-gray-400">
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-gray-400"
+                >
                   Frontend
                 </a>
               </li>
               <li className="md:mr-4 mb-2 md:mb-0">
-                <a href="https://www.betrybe.com/pessoas-contratadas"
+                <a
+                  href="https://www.betrybe.com/pessoas-contratadas"
                   target="_blank"
-                  className="text-sm hover:text-gray-400">
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-gray-400"
+                >
                   TrybeAbout
                 </a>
               </li>
               <li className="md:mr-4 mb-2 md:mb-0">
-                <a href="https://ajuda.betrybe.com/hc/pt-br"
+                <a
+                  href="https://ajuda.betrybe.com/hc/pt-br"
                   target="_blank"
-                  className="text-sm hover:text-gray-400">
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-gray-400"
+                >
                   HelpMe
                 </a>
               </li>

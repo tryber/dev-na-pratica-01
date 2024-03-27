@@ -3,6 +3,7 @@
     "id": 1,
     "name": "João Silva",
     "image": "/joao-silva.jpeg",
+    "highlight": true,
     "projects": [
       {
         "project": "Projeto XYZ",
@@ -20,6 +21,7 @@
     "id": 2,
     "name": "Maria Santos",
     "image": "/maria-santos.jpeg",
+    "highlight": true,
     "projects": [
       {
         "project": "Outro Projeto",
@@ -37,6 +39,61 @@
     "id": 3,
     "name": "Luisa Dias",
     "image": "/luisa-dias.jpeg",
+    "highlight": true,
+    "projects": [
+      {
+        "project": "Outro Projeto",
+        "projectLink": "#"
+      }
+    ],
+    "achievements": [
+      {
+        "achievement": "Outra Conquista",
+        "achievementLink": "#"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Pedro Pascal",
+    "image": "/pedro.webp",
+    "highlight": false,
+    "projects": [
+      {
+        "project": "Projeto XYZ",
+        "projectLink": "#"
+      }
+    ],
+    "achievements": [
+      {
+        "achievement": "Conquista ABC",
+        "achievementLink": "#"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Ryan Reynolds",
+    "image": "/Ryan-Reynolds.webp",
+    "highlight": false,
+    "projects": [
+      {
+        "project": "Outro Projeto",
+        "projectLink": "#"
+      }
+    ],
+    "achievements": [
+      {
+        "achievement": "Outra Conquista",
+        "achievementLink": "#"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Denzel Washington",
+    "image": "/Denzel-Washington.jpg",
+    "highlight": false,
     "projects": [
       {
         "project": "Outro Projeto",
