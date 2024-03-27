@@ -22,7 +22,7 @@ function Header(): JSX.Element {
             </button>
           </a>
         </div>
-        <div className="button-login">
+        {/* <div className="button-login">
           <a href="https://app.betrybe.com/login?_gl=1*1v5167f*_ga*MTM4OTYwOTgzNi4xNzA2NzIyNjg1*_ga_JRYMZ1LMBF*MTcxMTQ3MzYzNS4zNS4xLjE3MTE0NzM2MzYuNTkuMC4w&_ga=2.94989978.72088453.1711465070-1389609836.1706722685">
             <button type="button">
               <span>
@@ -37,7 +37,7 @@ function Header(): JSX.Element {
               </span>
             </button>
           </a>
-        </div>
+        </div> */}
       </nav>
     </header>
   );
