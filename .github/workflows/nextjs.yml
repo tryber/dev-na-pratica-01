@@ -72,7 +72,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('frontend/**/package-lock.json', 'frontend/**/yarn.lock') }}-
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} install --prefix frontend
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --prefix frontend
       - name: Run Next.js build
         run: |
           cd frontend
@@ -81,7 +81,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./frontend/dist
-
+  
   # Deployment job
   deploy:
     environment:
@@ -93,3 +93,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: frontend/dist   # Especifique o caminho correto para o diretório de implantação
