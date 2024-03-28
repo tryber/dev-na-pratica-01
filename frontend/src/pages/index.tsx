@@ -12,10 +12,8 @@ const Home: React.FC = () => {
       <main>
         <Headline title="destaques do mês" />
         <Card users={data} currentPage="current" />
-        <div className="mt-32">
-          <Footer />
-        </div>
       </main>
+      <Footer />
     </>
   );
 };

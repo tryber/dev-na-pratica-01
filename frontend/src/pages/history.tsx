@@ -7,14 +7,14 @@ import data from '../../data.json';
 
 const History: React.FC = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Headline title="histórico" />
-      <Card users={data} currentPage="history" />
-      <div className="mt-32">
-        <Footer />
-      </div>
-    </div>
+      <main>
+        <Headline title="histórico" />
+        <Card users={data} currentPage="history" />
+      </main>
+      <Footer />
+    </>
   );
 };
 
