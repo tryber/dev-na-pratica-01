@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TStar, StarProps } from '../types/Stars';
+import { parse } from 'path';
 
 
 const Star: React.FC<StarProps> = ({ selected, onClick }) => (
@@ -37,8 +38,8 @@ const StarRating: React.FC<TStar> = ({ totalStars }) => {
 
 const App: React.FC = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-bold mb-4">Dê sua nota:</h1>
+    <div>
+      <p className="font-bold mb-2">Dê sua nota:</p>
       <StarRating totalStars={5} />
     </div>
   );

@@ -131,3 +131,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}

@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import data from '../../data.json';
 
 const Home: React.FC = () => {
+
   return (
     <>
       <Header />
