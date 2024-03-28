@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { User, CardItemProps } from '@/types/User';
 import Project from '@/types/Project';
 import Achievement from '@/types/Achievement';
-import CardProps from '@/types/CardProps';
+import { CardProps } from '@/types/CardProps';
 import App from './Star';
 
 const Card: React.FC<CardProps> = ({ users, currentPage }) => {

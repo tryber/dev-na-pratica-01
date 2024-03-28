@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { TStar, StarProps } from '../types/Stars';
-import { parse } from 'path';
 
 
 const Star: React.FC<StarProps> = ({ selected, onClick }) => (
