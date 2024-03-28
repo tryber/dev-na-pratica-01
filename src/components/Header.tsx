@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
-    <header className="h-16 bg-headerBackground fixed w-full z-10 top-0">
+    <header className="h-16 bg-headerAndFooterBackground fixed w-full z-10 top-0">
       <div className="flex justify-between items-center w-full h-full p-7">
         <Image src="/logo-trybe.png" alt="logo" width="95" height="50" />
         <div>

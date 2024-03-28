@@ -5,7 +5,7 @@ export default interface User {
   id: number;
   name: string;
   image: string;
-  highlight: boolean,
+  highlight: boolean;
   projects: Project[];
   achievements: Achievement[];
 }
