@@ -5,6 +5,7 @@ import User from '@/types/User';
 import Project from '@/types/Project';
 import Achievement from '@/types/Achievement';
 import CardProps from '@/types/CardProps';
+import App from './Star';
 
 const Card: React.FC<CardProps> = ({ users, currentPage }) => {
   const filteredUsers =
@@ -30,7 +31,8 @@ const Card: React.FC<CardProps> = ({ users, currentPage }) => {
               />
               <h2 className="text-xl font-semibold text-white">{user.name}</h2>
             </div>
-            <div>
+            <div className='ml-10'>
+              <App />
               <h3 className="text-lg font-semibold mb-2 text-white">
                 Projetos:
               </h3>
@@ -43,7 +45,7 @@ const Card: React.FC<CardProps> = ({ users, currentPage }) => {
                 </div>
               ))}
             </div>
-            <div>
+            <div className='ml-10'>
               <h3 className="text-lg font-semibold mb-2 text-white">
                 Conquistas:
               </h3>
