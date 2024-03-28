@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
+    basePath: "/dev-na-pratica-01",
     output: "export",
-    distDir: "dist",
     images: {
         unoptimized: true,
     }
