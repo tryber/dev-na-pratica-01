@@ -36,13 +36,15 @@ const CardItem: React.FC<CardItemProps> = ({ user }) => {
   };
 
   return (
-    <div className={`flex justify-center items-center w-96 h-96 bg-[#14532d] rounded-lg overflow-hidden relative transition-transform duration-300 transform ${isVisible ? 'scale-125' : ''}`}
+    <div className={`flex justify-center w-auto items-center h-96 bg-[#14532d] rounded-lg overflow-hidden relative transition-transform duration-300 transform ${isVisible ? 'scale-125' : ''}`}
       onMouseOver={handleMouseOver}
-      onMouseLeave={handleMouseLeave}>
+      onMouseLeave={handleMouseLeave}
+      style={{ zIndex: isVisible ? 2 : 1 }}>
       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${user.image})` }}></div>
       {isVisible && (
-        <div className="absolute inset-0 bg-[#14532d] opacity-95 flex justify-center items-center">
-          <div className="bg-[#14532d] p-4 rounded-lg w-96 h-96 shadow-black shadow-lg text-white">
+        <div className="absolute inset-0 bg-[#14532d] opacity-90 flex justify-center items-center"
+        style={{ zIndex: 3 }}>
+          <div className="bg-[#14532d] p-4 rounded-lg w-full h-96 shadow-black shadow-lg text-white">
             <div className="flex items-center mb-4">
               <Image src={user.image} alt={user.name} width={80} height={80} className="w-16 h-16 object-cover rounded-full mr-4" />
               <h2 className="text-xl font-semibold">{user.name}</h2>

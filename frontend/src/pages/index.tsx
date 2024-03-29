@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className='bg-gradient-to-br from-[#184327] via-[#141517] to-[#184327] w-full h-full'>
         <Headline title="destaques do mês" />
         <Card users={data} currentPage="current" />
         <div className="mt-32">

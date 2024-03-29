@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 
   return (
     <div>
-      <div className="fixed w-full shadow-xl h-14 z-[100] bg-white hover:bg-[#1A1B1E] hover:text-white">
+      <div className="fixed w-full shadow-xl h-14 z-[100] bg-[#0C6D18] hover:bg-[#1A1B1E] hover:text-white">
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
           <Link href="/">
             <Image src="logo-trybe.webp" alt="Logo" width="50" height="5" />

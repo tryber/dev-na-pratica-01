@@ -4,7 +4,7 @@ import { TStar, StarProps } from '../types/Stars';
 
 const Star: React.FC<StarProps> = ({ selected, onClick }) => (
   <span
-    className={`text-3xl cursor-pointer ${selected ? 'text-yellow-500' : 'text-gray-400'
+    className={`text-3xl cursor-pointer ${selected ? 'text-yellow-500' : 'text-gray-800'
       }`}
     onClick={onClick}
   >
