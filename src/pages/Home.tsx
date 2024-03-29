@@ -1,11 +1,16 @@
+import { FormEvent } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 function Home() {
   const [searchParams, setSearchParams] = useSearchParams();
 
-  function handleSubmit(event) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const params = new URLSearchParams(new FormData(event.target)).toString();
+    // typescript hates DOM =)
+    const { target } = event;
+    const form = target as HTMLFormElement;
+    const formData = new FormData(form) as unknown as Record<string, string>;
+    const params = new URLSearchParams(formData).toString();
     setSearchParams(params);
   }
 
