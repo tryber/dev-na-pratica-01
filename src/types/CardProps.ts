@@ -1,6 +1,6 @@
-import User from './User';
+import { User } from './User';
 
-export default interface CardProps {
+export interface CardProps {
   users: User[];
   currentPage: 'current' | 'history';
 }

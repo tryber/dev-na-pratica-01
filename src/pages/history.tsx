@@ -9,11 +9,13 @@ const History: React.FC = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className='bg-gradient-to-br from-[#184327] via-[#141517] to-[#184327] w-full h-full'>
         <Headline title="histórico" />
         <Card users={data} currentPage="history" />
+        <div className="mt-32">
+          <Footer />
+        </div>
       </main>
-      <Footer />
     </>
   );
 };

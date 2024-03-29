@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-grow items-center justify-center bg-headerAndFooterBackground text-white h-auto mt-32">
+    <footer className="flex flex-grow items-center justify-center bg-headerAndFooterBackground text-white h-auto">
       <div className="container mx-auto px-4 text-center">
         <div className="flex flex-col md:flex-row md:justify-between">
           <div className="md:w-1/2">
@@ -14,8 +14,8 @@ const Footer: React.FC = () => {
           </div>
           <div className="md:w-1/2 mt-4 md:mt-0">
             <h2 className="text-2xl font-bold mb-4">Links úteis:</h2>
-            <ul className="flex flex-col md:flex-row justify-center">
-              <li className="md:mr-4 mb-2 md:mb-0 md:text-center">
+            <ul className="flex flex-col md:flex-row justify-center"> 
+              <li className="md:mr-4 mb-2 md:mb-0 md:text-center"> 
                 <a
                   href="https://www.betrybe.com/"
                   target="_blank"
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                   Trybe
                 </a>
               </li>
-              <li className="md:mr-4 mb-2 md:mb-0 md:text-center">
+              <li className="md:mr-4 mb-2 md:mb-0 md:text-center"> 
                 <a
                   href="https://www.betrybe.com/cursos/programacao-fundamentos-front-end"
                   target="_blank"
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                   Frontend
                 </a>
               </li>
-              <li className="md:mr-4 mb-2 md:mb-0 md:text-center">
+              <li className="md:mr-4 mb-2 md:mb-0 md:text-center"> 
                 <a
                   href="https://www.betrybe.com/pessoas-contratadas"
                   target="_blank"
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                   TrybeAbout
                 </a>
               </li>
-              <li className="md:mr-4 mb-2 md:mb-0 md:text-center">
+              <li className="md:mr-4 mb-2 md:mb-0 md:text-center"> 
                 <a
                   href="https://ajuda.betrybe.com/hc/pt-br"
                   target="_blank"

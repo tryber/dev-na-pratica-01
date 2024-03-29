@@ -1,11 +1,15 @@
 import Achievement from './Achievement';
 import Project from './Project';
 
-export default interface User {
+export interface User {
   id: number;
   name: string;
   image: string;
-  highlight: boolean;
+  highlight: boolean,
   projects: Project[];
   achievements: Achievement[];
+}
+
+export interface CardItemProps {
+  user: User;
 }
