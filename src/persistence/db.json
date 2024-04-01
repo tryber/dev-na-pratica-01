@@ -37,6 +37,25 @@
       "python",
       "backend"
     ]
+  },
+  {
+    "id": 3,
+    "date": { "day": 9, "month": 4, "year": 2024 },
+    "name": "Godzilla",
+    "picture": "link",
+    "github": "link",
+    "linkedin": "link",
+    "title": "teste",
+    "description": "big text",
+    "illustration": "link",
+    "tags": [
+      "html",
+      "css",
+      "react",
+      "tailwind",
+      "python",
+      "backend"
+    ]
   }
   ]
 }
