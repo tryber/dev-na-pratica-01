@@ -8,7 +8,9 @@ type Post = {
   title: string,
   illustration: string,
   description: string,
-  tags: string[]
+  tags: string[],
+  [key: string]: string[] | string | number |
+  { day: number, month: number, year: number, [key: string]: number },
 };
 
 export default Post;
