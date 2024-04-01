@@ -1,0 +1,57 @@
+import { FormEvent, useContext, useMemo } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import DataContext from '../context/DataContext';
+
+function Search() {
+  const [, setSearchParams] = useSearchParams();
+  const data = useContext(DataContext);
+
+  const allTags = useMemo(
+    () => Array.from(new Set(data.reduce<string[]>((acc, { tags }) => acc.concat(tags), []))),
+    [data],
+  );
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    // typescript hates DOM =)
+    const { target } = event;
+    const form = target as HTMLFormElement;
+    const formData = new FormData(form) as unknown as Record<string, string>;
+    // const formDataObj = Object.fromEntries(formData.entries());
+    const params = new URLSearchParams(formData);
+    setSearchParams(params);
+  }
+
+  return (
+    <section className="flex row justify section">
+      <form className="flex row justify form" onSubmit={handleSubmit}>
+        <div className="flex row form-div">
+          <h2>Tipo de Destaque</h2>
+          <select className="select" name="tipoDestaque">
+            <option disabled value="">Selecione uma opção</option>
+            <option>teste</option>
+          </select>
+        </div>
+        <div className="flex row">
+          <h2>Stacks</h2>
+          <select className="select" name="stacks">
+            <option disabled value="">Selecione uma opção</option>
+            {allTags.map((tag) => <option key={tag}>{tag}</option>)}
+          </select>
+        </div>
+        <div className="flex row div-buttons">
+          <button className="button" type="submit">Buscar</button>
+          <button
+            className="button"
+            type="button"
+            onClick={() => setSearchParams('')}
+          >
+            Limpar filtros
+          </button>
+        </div>
+      </form>
+    </section>
+  );
+}
+
+export default Search;
