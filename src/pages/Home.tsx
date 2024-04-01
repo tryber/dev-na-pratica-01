@@ -1,32 +1,13 @@
-import { FormEvent } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import Header from '../components/Header';
+import Search from '../components/Search';
 
 function Home() {
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    // typescript hates DOM =)
-    const { target } = event;
-    const form = target as HTMLFormElement;
-    const formData = new FormData(form) as unknown as Record<string, string>;
-    // const formDataObj = Object.fromEntries(formData.entries());
-    const params = new URLSearchParams(formData);
-    setSearchParams(params);
-  }
-
   return (
     <>
+      <Header />
+      <Search />
       <h2>Home</h2>
       <h1>Destrybers</h1>
-      <form action="/" method="get" onSubmit={handleSubmit}>
-        <select name="tipoDestaque">
-          <option disabled value="">Selecione uma opção</option>
-          <option>batata</option>
-        </select>
-        <button type="submit">submit</button>
-      </form>
-      <h3>{searchParams.get('tipoDestaque')}</h3>
     </>
   );
 }
