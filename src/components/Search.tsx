@@ -27,14 +27,14 @@ function Search() {
       <form className="flex row justify form" onSubmit={handleSubmit}>
         <div className="flex row form-div">
           <h2>Tipo de Destaque</h2>
-          <select className="select" name="tipoDestaque">
+          <select className="select" name="title">
             <option disabled value="">Selecione uma opção</option>
             <option>teste</option>
           </select>
         </div>
         <div className="flex row">
-          <h2>Stacks</h2>
-          <select className="select" name="stacks">
+          <h2>Tags</h2>
+          <select className="select" name="tags">
             <option disabled value="">Selecione uma opção</option>
             {allTags.map((tag) => <option key={tag}>{tag}</option>)}
           </select>
