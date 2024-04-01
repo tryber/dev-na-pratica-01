@@ -1,5 +1,5 @@
 import { goldKeyboardSeal, studentPhoto } from '../../assets';
-import CarouselCard from '../CarouselCard';
+import CarouselCard from '../Cards/CarouselCard';
 
 export default function Carousel() {
   return (

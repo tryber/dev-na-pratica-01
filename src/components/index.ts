@@ -1,4 +1,6 @@
-import { HomeBanner } from './Templates';
 import Footer from './Footer';
+import Header from './Header';
+import { StudentCard, SealCard } from './Cards';
+import Carousel from './Carousel';
 
-export { HomeBanner, Footer };
+export { Header, Footer, SealCard, StudentCard, Carousel };

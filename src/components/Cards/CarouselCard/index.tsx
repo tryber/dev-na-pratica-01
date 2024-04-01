@@ -1,3 +1,5 @@
+import { CardTitle } from '../styles';
+
 interface CarouselCardProps {
   studentPhoto: string;
   name: string;
@@ -25,7 +27,7 @@ export default function CarouselCard(
         <div className="flex gap-2">
           <img src={ awardSeal } alt="Award seal" />
           <div>
-            <p className="text-xl font-bold">{ title }</p>
+            <CardTitle>{ title }</CardTitle>
             <p className="text-sm">{ description }</p>
           </div>
         </div>
