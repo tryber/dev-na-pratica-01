@@ -1,17 +1,18 @@
-import { Footer, HomeBanner } from '../../components';
+import { useState } from 'react';
+import { Footer, SealCard } from '../../components';
+import { find } from '../../database';
+import { Container } from '../../styles/components';
+import ISeal from '../../database/seals/seal.interface';
+import { HomeBanner, HomeHighlights } from './templates';
 
 export default function Home() {
+  const [seals] = useState<ISeal[]>(find('seals') as ISeal[]);
+
   return (
-    <div>
+    <>
       <HomeBanner />
-      <section className="py-10 px-36">
-        <h2
-          className="text-4xl font-semibold"
-        >
-          Destaques deste mês
-        </h2>
-      </section>
-      <section className="py-10 px-36">
+      <HomeHighlights />
+      <Container>
         <h2 className="text-4xl font-semibold">
           Como os alunos se destacam?
         </h2>
@@ -20,8 +21,20 @@ export default function Home() {
           hard skills através de atitudes em nossa comunidade e
           em projetos pessoais. Veja a seguir o critério para cada premiação ou destaque.
         </p>
-      </section>
+        <div className="flex flex-wrap gap-2">
+          {
+            seals.map((seal) => (
+              <SealCard
+                key={ seal.title }
+                image={ seal.image }
+                title={ seal.title }
+                description={ seal.description }
+              />
+            ))
+          }
+        </div>
+      </Container>
       <Footer />
-    </div>
+    </>
   );
 }
