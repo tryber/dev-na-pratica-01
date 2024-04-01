@@ -3,12 +3,12 @@ type Post = {
   date: { day: number, month: number, year: number },
   name: string,
   picture: string,
-  illustration: string,
-  description: string,
   github: string,
   linkedin: string,
-  tags: string[],
-  projects: string[]
+  title: string,
+  illustration: string,
+  description: string,
+  tags: string[]
 };
 
 export default Post;
