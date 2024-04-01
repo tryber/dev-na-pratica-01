@@ -1,0 +1,35 @@
+.flex{
+  display: flex;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.justify{
+  justify-content: space-between;
+}
+
+.div-highlight{
+  background-color: green;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 20px auto;
+  align-items: center;
+}
+
+.div-student{
+  justify-content: space-around;
+  height: 97vh;
+  border-radius: 5px;
+  border: 2px solid gray;
+  margin-right: 20px;
+  margin-left:  10px;
+
+}
+
