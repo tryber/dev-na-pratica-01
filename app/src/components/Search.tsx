@@ -29,15 +29,15 @@ function Search(): JSX.Element {
 
   return (
     <section className="flex row justify section">
-      <form className="flex row justify form">
-        <div className="flex row form-div">
+      <form className="flex row form">
+        <div className="flex column form-div">
           <h2>Tipo de Destaque</h2>
           <select className="select" name="tipoDestaque" value={tipoDestaque} onChange={handleFilter}>
             <option disabled value="">Selecione uma opção</option>
             <option>teste</option>
           </select>
         </div>
-        <div className="flex row">
+        <div className="flex column">
           <h2>Stacks</h2>
           <select className="select" name="stacks" value={stacks} onChange={handleFilter}>
             <option disabled value="">Selecione uma opção</option>

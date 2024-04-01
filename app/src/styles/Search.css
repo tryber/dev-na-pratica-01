@@ -18,8 +18,9 @@
   background-color: green;
   border: 2px solid gray;
   border-radius: 5px;
-  width: 70%;
-  margin: 20px auto
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px 20px
 }
 
 .form{
@@ -41,5 +42,8 @@
 }
 
 .button{
-  margin:auto
+  margin: auto 10px;
+  border-radius: 4px ;
+  height: 40px;
+  width: 120px;
 }

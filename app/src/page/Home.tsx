@@ -3,6 +3,7 @@ import React from 'react';
 import Search from '../components/Search';
 import Header from '../components/Hearder';
 import data from '../persistence/PersistenceHelper';
+import Highlight from '../components/Highlight';
 
 function Home(): JSX.Element {
   console.log(data);
@@ -11,8 +12,8 @@ function Home(): JSX.Element {
       <Header />
       <Search />
       <div>
-        <h1>Hello</h1>
-        <h1>World</h1>
+        <h1>Destaques do mês</h1>
+        {data.map((post) => <Highlight key={post.id} post={post} />)}
       </div>
     </div>
   );
