@@ -10,7 +10,8 @@ function Home() {
     const { target } = event;
     const form = target as HTMLFormElement;
     const formData = new FormData(form) as unknown as Record<string, string>;
-    const params = new URLSearchParams(formData).toString();
+    // const formDataObj = Object.fromEntries(formData.entries());
+    const params = new URLSearchParams(formData);
     setSearchParams(params);
   }
 
