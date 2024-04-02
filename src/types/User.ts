@@ -5,7 +5,10 @@ export interface User {
   id: number;
   name: string;
   image: string;
-  highlight: boolean,
+  highlight: boolean;
+  about: string;
+  phrase: string;
+  linkedin: string;
   projects: Project[];
   achievements: Achievement[];
 }
