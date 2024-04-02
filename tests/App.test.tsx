@@ -10,6 +10,6 @@ it('should show "Destrybers" text', () => {
     <MemoryRouter>
       <App />
     </MemoryRouter>);
-  expect(screen.getByText(/Destrybers/i)).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: /Home/i })).toBeInTheDocument();
 
 })
