@@ -5,7 +5,6 @@ function History() {
     <>
       <Header />
       <h1>History</h1>
-      <h2>Coisas</h2>
     </>
   );
 }
