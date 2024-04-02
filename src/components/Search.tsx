@@ -26,11 +26,8 @@ function Search() {
     <section className="flex row justify section">
       <form className="flex row justify form" onSubmit={handleSubmit}>
         <div className="flex row form-div">
-          <h2>Tipo de Destaque</h2>
-          <select className="select" name="title">
-            <option disabled value="">Selecione uma opção</option>
-            <option>teste</option>
-          </select>
+          <h2>Title</h2>
+          <input type="text" name="title" />
         </div>
         <div className="flex row">
           <h2>Tags</h2>
