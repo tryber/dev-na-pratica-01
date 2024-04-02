@@ -5,6 +5,7 @@ type Post = {
   picture: string,
   github: string,
   linkedin: string,
+  email: string,
   title: string,
   illustration: string,
   description: string,
