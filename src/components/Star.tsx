@@ -38,7 +38,7 @@ const StarRating: React.FC<TStar> = ({ totalStars }) => {
 const App: React.FC = () => {
   return (
     <div>
-      <p className="font-bold mb-2">Dê sua nota:</p>
+      <span className="font-bold">Dê sua nota:</span>
       <StarRating totalStars={5} />
     </div>
   );
