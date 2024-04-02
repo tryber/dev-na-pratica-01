@@ -16,6 +16,7 @@
 
 .section{
   background-color: green;
+  border: 2px solid gray;
   padding: 34px;
   border-radius: 24px;
   width: 70%;
@@ -42,5 +43,8 @@
 }
 
 .button{
-  margin:auto
+  margin: auto 10px;
+  border-radius: 4px ;
+  height: 40px;
+  width: 120px;
 }
