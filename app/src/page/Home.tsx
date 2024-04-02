@@ -3,6 +3,7 @@ import React from 'react';
 import Search from '../components/Search';
 import Header from '../components/Hearder';
 import data from '../persistence/PersistenceHelper';
+import Info from '../components/Info';
 
 function Home(): JSX.Element {
   console.log(data);
@@ -11,8 +12,7 @@ function Home(): JSX.Element {
       <Header />
       <Search />
       <div>
-        <h1>Hello</h1>
-        <h1>World</h1>
+        <Info />
       </div>
     </div>
   );
