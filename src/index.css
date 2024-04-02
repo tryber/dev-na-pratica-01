@@ -1,0 +1,160 @@
+/* index  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* search  */
+
+.flex{
+  display: flex;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.justify{
+  justify-content: space-between;
+}
+
+.section{
+  background-color: green;
+  border: 2px solid gray;
+  padding: 34px;
+  border-radius: 24px;
+  width: 70%;
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.form{
+  width: 70%;
+}
+
+.form-div{
+  margin: 0px 10px;
+}
+
+.div-buttons{
+  margin-right: 20px 
+}
+
+.select{
+  height: fit-content;
+  margin:auto;
+  margin-left: 5px;
+}
+
+.button{
+  margin: auto 10px;
+  border-radius: 4px ;
+  height: 40px;
+  width: 120px;
+}
+
+/* info  */
+
+.container-info {
+  display: flex;
+  background-color: rgba(25, 87, 25, 0.856);
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+/* highlight */
+
+.flex{
+  display: flex;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.justify{
+  justify-content: space-between;
+}
+
+.div-highlight{
+  background-color: green;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 20px auto;
+  align-items: center;
+}
+
+.div-student{
+  justify-content: space-around;
+  height: 97vh;
+  border-radius: 5px;
+  border: 2px solid gray;
+  margin-right: 20px;
+  margin-left:  10px;
+
+}
+
+/* header */
+
+.container-home {
+  background-color: rgba(25, 87, 25, 0.856);
+}
+
+/* header */
+
+header .container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  border-color: transparent;
+}
+
+.container-button button {
+  padding: 18px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: green;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.container-button button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(125, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(70, 220, 24) 0px 7px 29px 0px;
+}
+
+.container-button button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+@media screen and (max-width: 768px) {
+  .container-button .button-options {
+    display: flex;
+  }
+
+  .container-button button {
+    border-radius: 0;
+  }
+}
