@@ -1,5 +1,6 @@
 export default interface ISeal {
+  id: number;
   title: string;
   description: string;
-  image: string;
+  imageSeal: string;
 }
