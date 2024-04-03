@@ -9,10 +9,10 @@ interface SealCardProps {
 export default function SealCard({ image, description, title }: SealCardProps) {
   return (
     <section
-      className="flex  gap-5 p-2.5 bg-slate-100 rounded-xl min-w-80 max-w-screen-lg"
+      className="flex  gap-5 p-2.5 bg-slate-100 rounded-xl min-w-80 max-w-screen-sm"
     >
       <img
-        className="w-1/6"
+        className="min-w-32 max-w-36"
         src={ image }
         alt={ title }
       />

@@ -25,19 +25,15 @@ export default function CarouselCard(
           <p className="text-sm">{stack}</p>
         </div>
         <div className="flex gap-2">
-          <img src={ awardSeal } alt="Award seal" />
+          <img
+            className="w-32 h-32 object-cover rounded-full"
+            src={ awardSeal }
+            alt="Award seal"
+          />
           <div>
             <CardTitle>{ title }</CardTitle>
             <p className="text-sm">{ description }</p>
           </div>
-        </div>
-        <div className="flex justify-center items-center gap-1">
-          <div
-            className="border-2 border-solid border-slate-900 w-4 h-4 rounded-full
-             bg-slate-900"
-          />
-          <div className="border-2 border-solid border-slate-900 w-4 h-4 rounded-full" />
-          <div className="border-2 border-solid border-slate-900 w-4 h-4 rounded-full" />
         </div>
       </div>
     </div>
