@@ -8,6 +8,7 @@ import people from './assets/people.png';
 import { Modal } from './components/Modal';
 
 import capaProjeto from './assets/capa.png';
+import Filter from './components/Filter';
 
 function App() {
   const [open, setOpen] = useState<boolean>(false);
@@ -15,8 +16,10 @@ function App() {
   const stacks = ['React', 'TypeScript'];
 
   return (
-    <div className="bg-green-500 w-full h-screen">
+    <div className="bg-green-500 w-full h-screen flex flex-col gap-6 items-center">
       <Header />
+
+      <Filter />
       <Card
         fotoCapa={ capa }
         titulo="Teclado de Ouro"
