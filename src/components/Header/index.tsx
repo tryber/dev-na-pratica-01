@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import Logo from '../../../public/logo.svg';
+import { logo } from '../../assets';
 
-function Header() {
+export default function Header() {
   return (
     <header className="w-full flex justify-around items-center">
-      <img src={ Logo } alt="Logo da Trybe" />
+      <img src={ logo } alt="Logo da Trybe" />
 
       <ul className="flex items-center gap-4">
         <li><Link to="/">Home</Link></li>
@@ -13,5 +13,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;
