@@ -20,7 +20,7 @@ function History() {
       <h1>History</h1>
       {allMonths.map((m) => (
         <Link key={m} to={{ pathname: '/home', search: `date=${m}` }}>
-          {m}
+          {m.replace('-', '/')}
           <br />
         </Link>
       ))}
