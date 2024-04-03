@@ -5,9 +5,11 @@ import facebookIcon from './facebook.svg';
 import instagramIcon from './instagram.svg';
 import linkedinIcon from './linkedin.svg';
 import youtubeIcon from './youtube.svg';
+import trybeLogo from './trybe-logo.svg';
 
 export {
   logo,
+  trybeLogo,
   studentPhoto,
   goldKeyboardSeal,
   facebookIcon,

@@ -7,12 +7,12 @@ interface StudentCardProps {
   studentImage: string;
   title: string;
   description: string;
-  image: string;
+  banner: string;
   seals: ISeal[];
 }
 
 export default function StudentCard(
-  { name, stack, studentImage, title, description, image, seals }: StudentCardProps,
+  { name, stack, studentImage, title, description, banner, seals }: StudentCardProps,
 ) {
   return (
     <section
@@ -21,7 +21,7 @@ export default function StudentCard(
     >
       <img
         className="w-full object-cover rounded-t-xl"
-        src={ image }
+        src={ banner }
         alt={ title }
       />
       <div className="p-3">
@@ -31,7 +31,7 @@ export default function StudentCard(
         </div>
         <div className="flex gap-2">
           <img
-            className="rounded-full object-cover min-w-20"
+            className="rounded-full object-cover w-20 h-20"
             src={ studentImage }
             alt={ name }
           />
@@ -45,7 +45,7 @@ export default function StudentCard(
                     <img
                       key={ seal.title }
                       className="w-7 h-7"
-                      src={ seal.image }
+                      src={ seal.imageSeal }
                       alt={ seal.title }
                     />
                   )),

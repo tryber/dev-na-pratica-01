@@ -17,13 +17,13 @@ export default function HomeHighlights() {
       <div className="flex flex-wrap gap-2">
         {
             highlights.map((highlight) => {
-              const { id, title, description, image, student } = highlight;
+              const { id, title, description, banner, student } = highlight;
               return (
                 <StudentCard
                   key={ id }
                   title={ title }
                   description={ description }
-                  image={ image }
+                  banner={ banner }
                   name={ student.name }
                   stack={ student.stack }
                   studentImage={ student.image }
