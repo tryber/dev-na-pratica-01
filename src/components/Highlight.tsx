@@ -20,15 +20,27 @@ function Highlight({ post }: HighlightProps) {
         <img className="img-person" src={picture} alt="Foto de perfil" />
         <div className="info-person">
           <p>{`Nome: ${name}`}</p>
-          <a href={linkedin} target="_blank" rel="noreferrer">Linkedin</a>
-          <a href={github} target="_blank" rel="noreferrer">Github</a>
+          <div className="flex-justify">
+            <a href={linkedin} target="_blank" rel="noreferrer">
+              <img alt="Linkedin" src={linkedinImg} className="social-logo" />
+            </a>
+            <a href={github} target="_blank" rel="noreferrer">
+              <img alt="Github" src={githubImg} className="social-logo" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="div-flex">
         <div className="img-port" style={{ backgroundImage: `url(${illustration})` }}>
           <div className="overlay">
             <h3>{description}</h3>
-            {tags.map((tag) => <h4 key={`${id}-${tag}`}>{tag}</h4>)}
+            <div className="flex row div-tags">
+              {tags.map((tag) => (
+                <h4 key={`${id}-${tag}`} className={`tag ${tag}`}>
+                  {tag}
+                </h4>
+              ))}
+            </div>
           </div>
         </div>
       </div>
