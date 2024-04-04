@@ -10,6 +10,9 @@ import { Modal } from './components/Modal';
 import capaProjeto from './assets/capa.png';
 import Filter from './components/Filter';
 
+import ButtonMain from './components/ButtonMain';
+import ButtonAlternative from './components/ButtonAlternative';
+
 function App() {
   const [open, setOpen] = useState<boolean>(false);
 
@@ -30,13 +33,15 @@ function App() {
         nome="Fulano da Silva"
         stack="Front-end"
         medalhas={ capa }
-      />
-      <button
-        className="bg-blue-600 w-44 p-3 text-white"
-        onClick={ () => setOpen(!open) }
-      >
+      />      
+      <ButtonMain onClick={ () => setOpen(!open) }>
         Abrir modal
-      </button>
+      </ButtonMain>
+
+      <ButtonAlternative onClick={ () => setOpen(!open) }>
+        Abrir modal
+      </ButtonAlternative>
+      
       <Modal
         isOpen={ open }
         setOpen={ setOpen }
@@ -52,8 +57,9 @@ function App() {
         Lorem Ipsum has been the industry's standard dummy text ever since the
         1500s, when an unknown printer took a galley of type and scrambled it"
         linkProjeto="/"
-      />
+      />      
     </div>
+    
   );
 }
 
