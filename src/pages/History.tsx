@@ -18,12 +18,17 @@ function History() {
     <>
       <Header />
       <h1>History</h1>
-      {allMonths.map((m) => (
-        <Link key={m} to={{ pathname: '/home', search: `date=${m}` }}>
-          {m.replace('-', '/')}
-          <br />
-        </Link>
-      ))}
+      <nav>
+        <ul>
+          {allMonths.map((m) => (
+            <li key={m}>
+              <Link to={{ pathname: '/home', search: `date=${m}` }}>
+                {m.replace('-', '/')}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </>
   );
 }
