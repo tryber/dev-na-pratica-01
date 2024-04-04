@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { CardTitle } from '../styles';
 
 interface CarouselCardProps {
@@ -13,7 +14,7 @@ export default function CarouselCard(
   { studentPhoto, name, stack, awardSeal, title, description }: CarouselCardProps,
 ) {
   return (
-    <div className="bg-slate-50 w-96 rounded-xl text-black">
+    <div className="bg-slate-50 w-96 max-xl:w-full rounded-xl text-black max-lg:hidden">
       <img
         className="rounded-t-xl w-full h-60 object-cover"
         src={ studentPhoto }
@@ -24,8 +25,8 @@ export default function CarouselCard(
           <p className="text-xl">{name}</p>
           <p className="text-sm">{stack}</p>
         </div>
-        <div className="flex gap-2">
-          <img src={ awardSeal } alt="Award seal" />
+        <div className="flex max-xl:flex-col items-center gap-2">
+          <img className="max-xl:w-20" src={ awardSeal } alt="Award seal" />
           <div>
             <CardTitle>{ title }</CardTitle>
             <p className="text-sm">{ description }</p>
