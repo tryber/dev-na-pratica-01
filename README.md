@@ -48,4 +48,3 @@ Os projetos serão avaliados de forma justa e imparcial, levando em consideraç�
 
 **Observação:** O fork do repositório é importante para que vocês consigam configurar o github pages com a branch da solução e assim conseguirem validar o site no github pages.
 
-
