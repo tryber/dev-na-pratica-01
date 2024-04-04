@@ -60,12 +60,12 @@
 
 /* info  */
 
-.container-info {
+/* .container-info {
   display: flex;
   background-color: rgba(25, 87, 25, 0.856);
   justify-content: space-evenly;
   padding: 20px 0;
-}
+} */
 
 /* highlight */
 
@@ -92,11 +92,94 @@
   width: 46%;
   padding: 20px;
   border-radius: 10px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: hsl(125, 48%, 69%);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+.div-highlight .img-person {
+  width: 180px;
+  height: 180px;
+  border-radius: 45%;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.div-highlight .info-person {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  margin-left: 30px;
+}
+
+.div-student {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.div-highlight .div-flex {
+  width: 100%;
+  height: 100%;
+}
+
+.img-port {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 100% 0;
+  transition: 8s;
+  cursor: pointer;
+  position: relative;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.445);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+  opacity: 0;
+  transition: 2s
+}
+
+.img-port:hover .overlay {
+  opacity: 1;
+}
+
+.img-person .img-port {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1440px){
+  .main-highlight {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .div-highlight {
+    width: 70%;
+  }
+  
+  .div-highlight .div-flex {
+    width: 100%;
+    height: 457px;
+  }
+}
+
 
 @media screen and (max-width: 950px) {
   .main-highlight {
@@ -109,6 +192,10 @@
     width: 100%;
   }
   
+  .div-highlight .div-flex {
+    width: 100%;
+    height: 457px;
+  }
 }
 
 
@@ -192,6 +279,7 @@ header .container-button {
   transform: translateY(10px);
   transition: 100ms;
 }
+
 
 @media screen and (max-width: 768px) {
   .container-button .button-options {
