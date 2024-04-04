@@ -4,7 +4,7 @@ interface ContainerProps {
 
 export default function Container({ children }: ContainerProps) {
   return (
-    <section className="py-10 px-36">
+    <section className="flex flex-col items-start gap-2 w-4/5 py-10">
       { children }
     </section>
   );
