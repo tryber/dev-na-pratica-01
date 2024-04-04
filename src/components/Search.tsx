@@ -11,6 +11,14 @@ function Search() {
     [data],
   );
 
+  const allMonths = useMemo(
+    () => Array.from(new Set(data.reduce<string[]>(
+      (acc, { date: { month, year } }) => [...acc, `${month}-${year}`],
+      [],
+    ))),
+    [data],
+  );
+
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     // typescript hates DOM =)
@@ -19,8 +27,8 @@ function Search() {
     const formData = new FormData(form) as unknown as Record<string, string>;
     // const formDataObj = Object.fromEntries(formData.entries());
     const params = new URLSearchParams(formData);
-    const hasDateFilter = searchParams.get('date');
-    if (hasDateFilter) params.append('date', hasDateFilter);
+    // const hasDateFilter = searchParams.get('date');
+    // if (hasDateFilter) params.append('date', hasDateFilter);
     setSearchParams(params);
   }
 
@@ -36,6 +44,13 @@ function Search() {
           <select className="select" name="tags">
             <option disabled value="">Selecione uma opção</option>
             {allTags.map((tag) => <option key={tag}>{tag}</option>)}
+          </select>
+        </div>
+        <div className="flex row">
+          <h2>Period</h2>
+          <select className="select" name="date">
+            <option disabled value="">Selecione uma opção</option>
+            {allMonths.map((m) => <option value={m} key={m}>{m.replace('-', '/')}</option>)}
           </select>
         </div>
         <div className="flex row div-buttons">
