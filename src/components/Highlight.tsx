@@ -1,4 +1,6 @@
 import Post from '../types/PostType';
+import linkedinImg from '../assests/linkedin_3536569.webp';
+import githubImg from '../assests/github-logo.webp';
 
 type HighlightProps = {
   post: Post
