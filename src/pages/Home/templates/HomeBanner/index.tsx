@@ -1,5 +1,10 @@
 /* eslint-disable max-len */
 import { Carousel, Header } from '../../../../components';
+import { LinkIcon } from '../../../../components/buttons';
+import facebookIcon from '../../../../assets/icones/icones-brancos/facebook.png';
+import instagramIcon from '../../../../assets/icones/icones-brancos/instagram.png';
+import linkedinIcon from '../../../../assets/icones/icones-brancos/linkedin.png';
+import youtubeIcon from '../../../../assets/icones/icones-brancos/youtube.png';
 
 export default function HomeBanner() {
   return (
@@ -16,6 +21,32 @@ export default function HomeBanner() {
             Veja nossos alunos destaques, estes que demonstrarão suas qualidade
             e pontos fortes ao colaborar com nossa comunidade.
           </p>
+          <div className="flex items-center max-sm:justify-center justify-start gap-3 mt-5">
+            <LinkIcon
+              url="https://www.instagram.com/betrybe"
+              target="_blank"
+              icon={ instagramIcon }
+              alt="Instagram"
+            />
+            <LinkIcon
+              url="https://www.facebook.com/betrybe"
+              target="_blank"
+              icon={ facebookIcon }
+              alt="Facebook"
+            />
+            <LinkIcon
+              url="https://www.linkedin.com/school/betrybe/"
+              target="_blank"
+              icon={ linkedinIcon }
+              alt="LinkedIn"
+            />
+            <LinkIcon
+              url="https://www.youtube.com/channel/UCZeN5eLUwiIyMaQjKR_ydVg"
+              target="_blank"
+              icon={ youtubeIcon }
+              alt="YouTube"
+            />
+          </div>
         </div>
         <Carousel />
       </div>
