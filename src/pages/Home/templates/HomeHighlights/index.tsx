@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { useState } from 'react';
 import { find } from '../../../../database';
 import { IHighlight } from '../../../../database/types';
@@ -7,14 +8,14 @@ export default function HomeHighlights() {
   const [highlights] = useState<IHighlight[]>(find('highlights') as IHighlight[]);
 
   return (
-    <section className="py-10 px-36 bg-slate-100">
-      <h2
-        className="text-4xl font-semibold"
-      >
-        Destaques deste mês
-      </h2>
+    <section className="bg-slate-200 flex flex-col items-center py-10">
+      <div className="w-4/5  text-start mb-5">
+        <h2 className="text-4xl font-semibold">
+          Destaques deste mês
+        </h2>
+      </div>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="w-4/5 flex flex-wrap max-[819px]:w-full gap-2 justify-around p-1">
         {
             highlights.map((highlight) => {
               const { id, title, description, image, student } = highlight;
