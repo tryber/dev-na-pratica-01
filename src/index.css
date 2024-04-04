@@ -32,9 +32,9 @@ h2 {
   border: 2px solid gray;
   padding: 34px;
   border-radius: 24px;
-  width: 75%;
+  /* width: 75%; */
   margin: 20px auto;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
 }
 
 .form {
@@ -99,6 +99,8 @@ h2 {
   padding: 20px;
   border-radius: 10px;
   justify-content: space-around;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   background-color: hsl(125, 48%, 69%);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -196,6 +198,19 @@ h2 {
     width: 100%;
   }
 
+  .div-student {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .div-highlight .info-person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
   section div {
     width: 50%;
   }
@@ -214,9 +229,69 @@ h2 {
 
   .div-highlight {
     width: 100%;
+    flex-direction: column;
   }
-  
+
+
+  section {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  /*alterações no css */
+
+  .container-button {
+    width: 100%;
+  }
+
+  section div {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .form-div {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .form .button {
+    width: 100px;
+    padding: 4px;
+  }
+
 }
+
+/* @media screen and (max-width: 949px) {
+  
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .form-div {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .form .button {
+    width: 100px;
+    padding: 4px;
+  }
+} */
 
 
 /* .flex{

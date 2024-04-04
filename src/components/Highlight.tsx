@@ -8,11 +8,12 @@ function Highlight({ post }: HighlightProps) {
   // const [isHovered, setIsHovered] = useState(false);
 
   const {
-    id, tags, name, picture, github, linkedin, illustration,
+    id, description, title, tags, name, picture, github, linkedin, illustration,
   } = post;
 
   return (
-    <div className="flex row div-highlight">
+    <div className="div-highlight">
+      <h2>{title}</h2>
       <div className="div-student">
         <img className="img-person" src={picture} alt="Foto de perfil" />
         <div className="info-person">
@@ -24,25 +25,11 @@ function Highlight({ post }: HighlightProps) {
       <div className="div-flex">
         <div className="img-port" style={{ backgroundImage: `url(${illustration})` }}>
           <div className="overlay">
+            <h3>{description}</h3>
             {tags.map((tag) => <h4 key={`${id}-${tag}`}>{tag}</h4>)}
           </div>
         </div>
       </div>
-      {/* <div
-        className="projeto"
-        onMouseEnter={() => setIsHovered(false)}
-        onMouseLeave={() => setIsHovered(true)}
-      >
-        <img className="illustration" src={illustration} alt="Foto do destaque" />
-        {isHovered && (
-          <div className="overlay" />
-        )}
-        {isHovered && (
-          <div className="div-tag">
-            {tags.map((tag) => <h4 key={`${id}-${tag}`}>{tag}</h4>)}
-          </div>
-        )}
-      </div> */}
     </div>
   );
 }
