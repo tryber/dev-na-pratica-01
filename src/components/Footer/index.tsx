@@ -5,7 +5,7 @@ import {
   logo,
   youtubeIcon,
 } from '../../assets';
-import { LinkIcon } from '../buttons';
+import { LinkIcon, RouteButton } from '../buttons';
 
 export default function Footer() {
   return (
@@ -16,10 +16,10 @@ export default function Footer() {
         </div>
         <div className="p-3">
           <p className="text-xl">Links</p>
-          <ul className="p-1">
-            <li>Home</li>
-            <li>History</li>
-          </ul>
+          <nav className="flex flex-col">
+            <RouteButton text="Home" path="/" />
+            <RouteButton text="Histórico" path="highlights/history" />
+          </nav>
         </div>
         <div />
       </section>

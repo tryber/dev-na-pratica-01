@@ -28,7 +28,7 @@ export default function Home() {
             seals.map((seal) => (
               <SealCard
                 key={ seal.title }
-                image={ seal.image }
+                image={ seal.imageSeal }
                 title={ seal.title }
                 description={ seal.description }
               />
