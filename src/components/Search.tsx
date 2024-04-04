@@ -34,12 +34,12 @@ function Search() {
         <div className="flex row">
           <h2>Tags</h2>
           <select className="select" name="tags">
-            <option disabled value="">Selecione uma opção</option>
+            <option disabled selected value="">Selecione uma opção</option>
             {allTags.map((tag) => <option key={tag}>{tag}</option>)}
           </select>
         </div>
         <div className="flex row div-buttons">
-          <button className="button" type="submit">Buscar</button>
+          <button className="button-56" type="submit">Buscar</button>
           <button
             className="button"
             type="button"
@@ -55,6 +55,7 @@ function Search() {
         </div>
       </form>
     </section>
+
   );
 }
 
