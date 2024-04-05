@@ -111,12 +111,14 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   margin: 20px auto;
+  flex-wrap: wrap;
 }
 
 
 .div-highlight {
   width: 46%;
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   justify-content: space-around;
   display: flex;
@@ -157,6 +159,12 @@ h2 {
   background-color: #d1e7dd;
   color: darkgreen;
   border: darkgreen solid 1px;
+}
+
+.frontend{
+  background-color: #f8e7dd;
+  color: rgb(255, 153, 0);
+  border: orange solid 1px;
 }
 
 .react{
