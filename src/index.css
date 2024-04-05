@@ -220,7 +220,7 @@ h2 {
 
 .img-port {
   width: 100%;
-  height: 100%;
+  height: 90%;
   background-size: cover;
   background-position: 100% 0;
   transition: 8s;
@@ -279,36 +279,7 @@ h2 {
   }
 }
 
-
-@media screen and (max-width: 1070px) {
-  .container-button {
-    width: 100%;
-  }
-
-  .context-highlight {
-    width: 100%;
-  }
-
-  .div-student {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-  }
-
-  .div-highlight .info-person {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 10px;
-  }
-
-  /* section div {
-    width: 50%;
-  } */
-
-
-}
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1020px) {
 /* Estilos para dispositivos pequenos */
 
   .main-highlight {
