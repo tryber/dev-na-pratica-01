@@ -1,84 +1,102 @@
 {
   "posts": [
-  {
-    "id": 1,
-    "date": { "day": 7, "month": 12, "year": 2024 },
-    "name": "Lisan al Gaib",
-    "picture": "link",
-    "github": "link",
-    "linkedin": "link",
-    "email": "e@mail",
-    "title": "teste",
-    "illustration": "link",
-    "description": "big text",
-    "tags": [
-      "html",
-      "css",
-      "react",
-      "c#",
-      "python",
-      "backend"
-    ]
-  },
-  {
-    "id": 2,
-    "date": { "day": 9, "month": 1, "year": 2024 },
-    "name": "Muad'Dib",
-    "picture": "link",
-    "github": "link",
-    "linkedin": "link",
-    "email": "e@mail",
-    "title": "teste",
-    "description": "big text",
-    "illustration": "link",
-    "tags": [
-      "html",
-      "css",
-      "react",
-      "java",
-      "python",
-      "backend"
-    ]
-  },
-  {
-    "id": 3,
-    "date": { "day": 9, "month": 4, "year": 2024 },
-    "name": "Godzilla",
-    "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjoYGLjwMt38P-npkfer4kVkf4xKv-ZOk7JDFZCYHilQ&s",
-    "github": "link.@test.com",
-    "linkedin": "link",
-    "email": "e@mail",
-    "title": "teste",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjoYGLjwMt38P-npkfer4kVkf4xKv-ZOk7JDFZCYHilQ&s",
-    "tags": [
-      "html",
-      "css",
-      "react",
-      "tailwind",
-      "python",
-      "backend"
-    ]
-  },
-  {
-    "id": 4,
-    "date": { "day": 4, "month": 4, "year": 2024 },
-    "name": "Kong",
-    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/King_Kong_in_Dublin.jpg/400px-King_Kong_in_Dublin.jpg?20090416213709",
-    "github": "link",
-    "linkedin": "link",
-    "email": "e@mail",
-    "title": "teste",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT75idGKE4i-cAMMyRvv-xbD_eFuFohvs0YyWgGge62Sw&s",
-    "tags": [
-      "html",
-      "css",
-      "react",
-      "cebola",
-      "python",
-      "backend"
-    ]
-  }
+    {
+      "id": 1,
+      "date": { "day": 7, "month": 1, "year": 2023 },
+      "name": "Lisan al Gaib",
+      "picture": "link",
+      "github": "link",
+      "linkedin": "link",
+      "email": "e@mail",
+      "title": "teste",
+      "illustration": "link",
+      "description": "big text",
+      "tags": [
+        "html",
+        "css",
+        "react",
+        "c#",
+        "python",
+        "backend"
+      ]
+    },
+    {
+      "id": 2,
+      "date": { "day": 9, "month": 2, "year": 2024 },
+      "name": "Muad'Dib",
+      "picture": "link",
+      "github": "link",
+      "linkedin": "link",
+      "email": "e@mail",
+      "title": "teste",
+      "description": "big text",
+      "illustration": "link",
+      "tags": [
+        "html",
+        "css",
+        "react",
+        "java",
+        "python",
+        "backend"
+      ]
+    },
+    {
+      "id": 3,
+      "date": { "day": 9, "month": 4, "year": 2024 },
+      "name": "Godzilla",
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbFKM8IDqWKFBPbvVZaevWyMph8cfz5nITHw&s",
+      "github": "link.@test.com",
+      "linkedin": "link",
+      "email": "e@mail",
+      "title": "ゴジラ Gojira",
+      "description": "Godzilla, no filme original Godzilla, é uma criatura cujo habitat subaquático foi completamente destruído por um teste de bomba de hidrogênio que também matou sua família e queimou e o deixou com cicatrizes. Com raiva e expulso de sua casa, Godzilla jogou sua ira contra a humanidade, destruindo todos os barcos que encontrou e depois atacando a cidade de Tóquio",
+      "illustration": "https://www.mundoconectado.com.br/wp-content/uploads/2024/03/14011206/Godzilla-e-Kong-O-Novo-Imperio-ganha-trailer-final-cheio-de-acao-912x569.jpg",
+      "tags": [
+        "html",
+        "css",
+        "react",
+        "tailwind",
+        "python",
+        "backend"
+      ]
+    },
+    {
+      "id": 4,
+      "date": { "day": 4, "month": 4, "year": 2024 },
+      "name": "Kong",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/King_Kong_in_Dublin.jpg/400px-King_Kong_in_Dublin.jpg?20090416213709",
+      "github": "link",
+      "linkedin": "link",
+      "email": "e@mail",
+      "title": "キングコング対ゴジラ",
+      "description": "King Kong, também referido simplesmente como Kong, é um monstro gigante fictício, ou kaiju, que se assemelha a um gorila, que apareceu em várias mídias desde 1933.",
+      "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT75idGKE4i-cAMMyRvv-xbD_eFuFohvs0YyWgGge62Sw&s",
+      "tags": [
+        "html",
+        "css",
+        "react",
+        "cebola",
+        "python",
+        "backend"
+      ]
+    },
+    {
+      "id": 5,
+      "date": { "day": 4, "month": 4, "year": 2024 },
+      "name": "Anguirus",
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfF4NZRse_2NHgTfY3rJyQfZLoiXsobBPhzw&s",
+      "github": "link",
+      "linkedin": "link",
+      "email": "e@mail",
+      "title": "アンギラス Angirasu ",
+      "description": "Anguirus é retratado como um lutador tenaz e feroz. Apesar de constantemente lutar contra inimigos mais fortes que si, Anguirus raramente desiste e sempre luta viciosamente. Apesar de sua natureza feroz, Anguirus tradicionalmente é mostrado como sendo um amigo próximo de Godzilla.",
+      "illustration": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8mbfsPyzHFIdgRSIYMPqSd5qACrw7lGX5AA&s",
+      "tags": [
+        "frontend",
+        "javaScript",
+        "react",
+        "css"
+      ]
+    }
   ]
 }
