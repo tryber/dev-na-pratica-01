@@ -10,7 +10,7 @@ const Headline: React.FC<HeadlineProps> = ({ title }) => {
     <div
       className={`py-16 ${
         !dark ? "bg-[#0C6D18]" : "bg-[#1f2937]"
-      } w-full h-full mx-auto`}
+      } w-full h-full mx-auto overflow-auto`}
     >
       <button type="button" onClick={() => setDark(!dark)}>
         <Image
