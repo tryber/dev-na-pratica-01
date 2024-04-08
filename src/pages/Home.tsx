@@ -32,10 +32,10 @@ function Home() {
     <>
       <Header />
       <Search />
-      <div className="context-highlight">
+      <div className="context-highlight history-month">
         <h1>Destaques:</h1>
-        <main className="main-highlight">
-          <ul>{filtered.map((post) => <li key={post.id}><Highlight post={post} /></li>)}</ul>
+        <main>
+          <ul className="main-highlight">{filtered.map((post) => <li key={post.id}><Highlight post={post} /></li>)}</ul>
         </main>
       </div>
     </>

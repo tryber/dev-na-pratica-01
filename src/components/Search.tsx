@@ -53,8 +53,8 @@ function Search() {
   }
 
   return (
-    <section className="flex row justify section">
-      <div className="flex row justify form">
+    <search className="flex column justify section">
+      <section className="flex row justify form">
         <form className="flex row form-div" onSubmit={handleIntersectionInputSubmit}>
           <label htmlFor="name-filter">
             Pesquisar por aluno:
@@ -106,17 +106,17 @@ function Search() {
             Limpar filtros
           </button>
         </div>
-      </div>
-      <br />
-      <section>
+      </section>
+      <div className="divisor" />
+      <section className="flex row">
         <h2>Filtros aplicados:</h2>
-        <ul>
+        <ul className="flex row justify">
           {[...searchParams.entries()].map(
             ([k, v]) => <li key={v}><Filter filterKey={k} filterValue={v} /></li>,
           )}
         </ul>
       </section>
-    </section>
+    </search>
   );
 }
 
