@@ -4,12 +4,11 @@ import { User } from "@/types/User";
 import Project from "@/types/Project";
 import App from "./Star";
 
-const Card: React.FC<{user: User}> = ({ user }) => {
-  
+const Card: React.FC<{ user: User }> = ({ user }) => {
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {user.projects.map((project, index) => (
+      <div className="grid grid-cols-3 gap-x-32 md:gap-x-64 lg:gap-x-8">
+        {user.projects.map((project, index) => (
           <CardItem key={index} project={project} />
         ))}
       </div>
@@ -17,7 +16,7 @@ const Card: React.FC<{user: User}> = ({ user }) => {
   );
 };
 
-const CardItem: React.FC<{project: Project}> = ({ project }) => {
+const CardItem: React.FC<{ project: Project }> = ({ project }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleMouseOver = () => {
@@ -30,7 +29,7 @@ const CardItem: React.FC<{project: Project}> = ({ project }) => {
 
   return (
     <div
-      className={`flex justify-center w-auto items-center h-40 bg-[#14532d] rounded-lg overflow-hidden relative transition-transform duration-300 transform ${
+      className={`flex justify-center w-28 h-20 md:w-48 lg:w-auto items-center md:h-40 bg-[#14532d] rounded-lg overflow-hidden relative transition-transform duration-300 transform ${
         isVisible ? "scale-150" : ""
       }`}
       onMouseOver={handleMouseOver}
@@ -50,13 +49,13 @@ const CardItem: React.FC<{project: Project}> = ({ project }) => {
             <App />
             <div className="overflow-auto max-h-full">
               <h3 className="text-lg font-semibold mb-2">Projetos:</h3>
-              
-                <div className="mb-4">
-                  <p>{project.project}</p>
-                  <Link href={project.projectLink}>
-                    <p className="text-blue-500 hover:underline">Ver mais</p>
-                  </Link>
-                </div>
+
+              <div className="mb-4">
+                <p>{project.project}</p>
+                <Link href={project.projectLink}>
+                  <p className="text-blue-500 hover:underline">Ver mais</p>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

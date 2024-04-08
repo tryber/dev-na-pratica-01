@@ -5,22 +5,24 @@ import { StudentProps } from "@/types/StudentsProps";
 
 const Student: React.FC<StudentProps> = ({ image, student_user }) => {
   return (
-    <div className="flex justify-center items-center mb-48 mt-32 w-full">
+    <div className="flex justify-center items-center mb-48 mt-12 md:mt-32 w-full">
       <div className="text-white w-3/5 flex-col flex justify-start mr-8">
         <h1 className="text-5xl "> {student_user.name}</h1>
-        <h3 className="text-3xl mt-2">{student_user.phrase}</h3>
-        <h4 className="flex mt-4 justify-center items-center ">
+        <h3 className="text-base md:text-2xl lg:text-3xl mt-2">
+          {student_user.phrase}
+        </h3>
+        <h4 className="flex mt-4 justify-center items-center text-xs md:text-base ">
           <i>{student_user.about}</i>
         </h4>
-        <div className="mt-4">
+        <div className="mt-4 ">
           <Card user={student_user} />
         </div>
       </div>
-      <div className="flex relative justify-end ml-16 rounded-[40px] hover:bg-black/80 group hover:scale-105 ease-in duration-500">
+      <div className="flex relative justify-end md:ml-16 rounded-[40px] hover:bg-black/80 group hover:scale-105 ease-in duration-500">
         <Image
           src={image}
           alt="foto"
-          className="rounded-[40px] w-72 group-hover:opacity-10"
+          className="rounded-[40px] w-32 md:w-72 group-hover:opacity-10"
           width={80}
           height={80}
         />
@@ -28,11 +30,10 @@ const Student: React.FC<StudentProps> = ({ image, student_user }) => {
           <h3 className="text-2xl text-white tracking-wider text-center py-3">
             <a href={student_user.linkedin} target="_blank">
               <svg
+                className="md:w-48 md:h-32 h-12"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="100"
-                height="100"
                 viewBox="0 0 48 48"
               >
                 <path

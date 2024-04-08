@@ -14,7 +14,9 @@ const Header: React.FC = () => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         SetShadow(true);
-      } else SetShadow(false);
+      } else {
+        SetShadow(false);
+      }
     };
     window.addEventListener("scroll", handleShadow);
   }, []);
@@ -68,7 +70,7 @@ const Header: React.FC = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w[60%] md:w[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              : "fixed left-[100%] sm:left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div className="flex justify-between w-full items-center">
@@ -94,8 +96,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="border-b border-gray-300 my-4">
-            <p className="w-[85%] md:w-[90%] py-4">
-              criando o melhor projeto para vocÃª
+            <p className="w-[85%] md:w-[90%] py-4 underline underline-offset-2">
+              a escola de tecnologia onde você aprende de verdade
             </p>
           </div>
           <div className="py-4 flex flex-col">
