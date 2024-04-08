@@ -6,8 +6,8 @@ import App from "./Star";
 
 const Card: React.FC<{ user: User }> = ({ user }) => {
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-3 gap-x-32 md:gap-x-64 lg:gap-x-8">
+    <div className="container mx-auto lg:mt-8">
+      <div className="grid grid-cols-3 gap-x-8 md:gap-x-16 lg:gap-x-2">
         {user.projects.map((project, index) => (
           <CardItem key={index} project={project} />
         ))}
@@ -29,7 +29,7 @@ const CardItem: React.FC<{ project: Project }> = ({ project }) => {
 
   return (
     <div
-      className={`flex justify-center w-28 h-20 md:w-48 lg:w-auto items-center md:h-40 bg-[#14532d] rounded-lg overflow-hidden relative transition-transform duration-300 transform ${
+      className={`flex justify-center w-24 h-20 md:w-[200px] lg:w-[300px] xl:w-[400px] items-center md:h-40 bg-[#14532d] rounded-lg overflow-hidden relative transition-transform duration-300 transform ${
         isVisible ? "scale-150" : ""
       }`}
       onMouseOver={handleMouseOver}
