@@ -9,7 +9,7 @@ const History: React.FC = () => {
   return (
     <>
       <Header />
-      <main className='bg-gradient-to-br from-[#184327] via-[#141517] to-[#184327] w-full h-full'>
+      <main className='bg-gradient-to-br from-[#184327] via-[#141517] to-[#184327] w-full h-full overflow-auto'>
         <Headline title="histórico" />
         <StudentsRender symbol='!' />
         <div className="mt-32">

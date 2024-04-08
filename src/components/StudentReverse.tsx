@@ -6,7 +6,7 @@ import { StudentProps } from "@/types/StudentsProps";
 const StudentReverse: React.FC<StudentProps> = ({ image, student_user }) => {
   return (
     <div className="flex justify-center items-center mb-48 mt-32  w-full">
-      <div className="flex relative justify-end md:mr-16 rounded-[40px] hover:bg-black/80 group hover:scale-105 ease-in duration-500">
+      <div className="flex relative mr-8 justify-end md:ml-16 rounded-[40px] hover:bg-black/80 group hover:scale-105 ease-in duration-500">
         <Image
           src={image}
           alt="foto"
@@ -37,7 +37,7 @@ const StudentReverse: React.FC<StudentProps> = ({ image, student_user }) => {
           </h3>
         </div>
       </div>
-      <div className="text-white w-3/5 flex-col flex justify-start mr-8">
+      <div className="text-white w-3/5 flex-col flex justify-start">
         <h1 className="text-5xl "> {student_user.name}</h1>
         <h3 className="text-base md:text-2xl lg:text-3xl mt-2">
           {student_user.phrase}
@@ -45,7 +45,7 @@ const StudentReverse: React.FC<StudentProps> = ({ image, student_user }) => {
         <h4 className="flex mt-4 justify-center items-center text-xs md:text-base ">
           <i>{student_user.about}</i>
         </h4>
-        <div className="mt-4">
+        <div className="mt-4 ">
           <Card user={student_user} />
         </div>
       </div>
