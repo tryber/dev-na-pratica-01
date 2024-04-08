@@ -10,6 +10,8 @@ const Header: React.FC = () => {
     setNav(!nav);
   };
 
+  // use effect para esconder shadow da barra sem scrolar
+
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
