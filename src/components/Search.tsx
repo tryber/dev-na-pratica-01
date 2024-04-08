@@ -34,7 +34,7 @@ function Search() {
         <div className="flex row form-div">
           <h2>Tags</h2>
           <select className="select" name="tags">
-            <option disabled value="">Selecione uma opção</option>
+            <option disabled selected value="">Selecione uma opção</option>
             {allTags.map((tag) => <option key={tag}>{tag}</option>)}
           </select>
         </div>
