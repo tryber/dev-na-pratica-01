@@ -8,8 +8,9 @@ const Headline: React.FC<HeadlineProps> = ({ title }) => {
 
   return (
     <div
-      className={`py-16 ${!dark ? "bg-[#0C6D18]" : "bg-[#1f2937]"
-        } w-full h-full mx-auto overflow-auto`}
+      className={`py-16 ${
+        !dark ? "bg-[#0C6D18]" : "bg-[#1f2937]"
+      } w-full h-full mx-auto overflow-auto`}
     >
       <button type="button" onClick={() => setDark(!dark)}>
         <Image
@@ -21,12 +22,10 @@ const Headline: React.FC<HeadlineProps> = ({ title }) => {
           title="Dark theme"
         />
       </button>
-      <h4 className="text-center py-4 mx-auto text-sm sm:text-base lg:text-lg xl:text-xl text-white underline underline-offset-4">
+      <h4 className="flex justify-center items-center py-4 mx-80 text-white underline underline-offset-4">
         EXPLORANDO A CATEGORIA
       </h4>
-
-
-      <h1 className="text-center text-6xl font-bold my-8 text-white uppercase">
+      <h1 className="flex justify-center items-center text-6xl font-bold my-8 mx-80 text-white uppercase">
         {title}
       </h1>
     </div>
