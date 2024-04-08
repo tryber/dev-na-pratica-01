@@ -61,34 +61,37 @@ function History() {
     );
   }, [data, allMonths]);
 
-  const [yearState, setYearState] = useState<number | undefined>(undefined);
+  const [yearState, setYearState] = useState<number | ''>('');
 
   return (
     <>
       <Header />
-      <div className="flex row form-div">
-        <h2>Anos</h2>
-        <select
-          value={yearState}
-          onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
-            setYearState(Number(event.target.value));
-          }}
-          className="select"
-          name="tags"
-        >
-          <option disabled selected value="">Selecione uma opção</option>
-          {allYears
-            .map((yearOption) => (
-              <option key={yearOption}>{yearOption}</option>
-            ))}
-        </select>
+      <div className="flex">
+        <form className="flex row form-history">
+          <h2>Escolha o período desejado</h2>
+          <select
+            value={yearState}
+            onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+              setYearState(Number(event.target.value));
+            }}
+            className="select"
+            name="tags"
+          >
+            <option disabled selected value="">Selecione uma opção</option>
+            {allYears
+              .map((yearOption) => (
+                <option key={yearOption}>{yearOption}</option>
+              ))}
+          </select>
+          <button className="button" type="button" onClick={() => setYearState('')}>Limpar Filtro</button>
+        </form>
       </div>
       <div className="history">
         {highlightsByMonth
-          .filter(({ year }) => yearState === undefined || Number(year) === yearState)
+          .filter(({ year }) => yearState === '' || Number(year) === yearState)
           .map(({ month, year, highlights }) => (
-            <div key={`history-${month}-${year}`} className="history-month">
-              <h2 className="history-month-title">{`${month} ${year}`}</h2>
+            <div key={`history-${month}-${year}`} className="history-month context-highlight">
+              <h1 className="history-month-title">{`${month} ${year}`}</h1>
               <div className="main-highlight">
                 {
                 highlights.map((post) => <Highlight key={post.id} post={post} />)
