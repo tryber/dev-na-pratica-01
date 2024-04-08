@@ -32,7 +32,6 @@ function Home() {
     <>
       <Header />
       <Search />
-      {/* <h2>Home</h2> */}
       <div className="context-highlight">
         <h1>Destaques do mês</h1>
         <div className="main-highlight">
