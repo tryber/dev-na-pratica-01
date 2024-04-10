@@ -25,6 +25,7 @@ function HighlightContent({ post }: HighlightProps) {
             ))}
           </div>
         </div>
+        <p>para dispositivo movel click na imagem</p>
       </div>
     </div>
   );
