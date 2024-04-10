@@ -20,6 +20,11 @@
   /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
 }
 
+li {
+  list-style: none;
+
+}
+
 .search-section-form{
   display: flex;
   flex-direction: row;
