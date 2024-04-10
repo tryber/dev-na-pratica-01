@@ -42,9 +42,6 @@ function History() {
     [data],
   );
 
-  const newDate = highlightsByMonth;
-  console.log(newDate);
-
   const allYears = useMemo(
     () => Array.from(new Set(allMonths.map((monthYear) => monthYear.split('-')[1]))),
     [allMonths],
