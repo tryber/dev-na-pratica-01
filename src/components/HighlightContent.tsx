@@ -8,7 +8,7 @@ function HighlightContent({ post }: HighlightProps) {
   // const [isHovered, setIsHovered] = useState(false);
 
   const {
-    id, description, title, tags, illustration,
+    id, description, title, tags, illustration, link,
   } = post;
 
   return (
@@ -24,6 +24,11 @@ function HighlightContent({ post }: HighlightProps) {
               </h4>
             ))}
           </div>
+          <br />
+          <h3>
+            link:
+            <a href={link} target="_blank" rel="noreferrer">{link}</a>
+          </h3>
         </div>
         <p>para dispositivo movel click na imagem</p>
       </div>

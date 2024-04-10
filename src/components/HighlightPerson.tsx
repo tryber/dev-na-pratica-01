@@ -22,15 +22,12 @@ function HighlightPerson({ post }: HighlightProps) {
         <div className="flex-justify">
           <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
             <img alt="Email" src={emailImg} className="social-logo" />
-            <p>{email}</p>
           </a>
           <a href={linkedin} target="_blank" rel="noreferrer">
             <img alt="Linkedin" src={linkedinImg} className="social-logo" />
-            <p>{linkedin}</p>
           </a>
           <a href={github} target="_blank" rel="noreferrer">
             <img alt="Github" src={githubImg} className="social-logo" />
-            <p>{github}</p>
           </a>
         </div>
       </div>
