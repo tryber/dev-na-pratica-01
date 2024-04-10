@@ -42,9 +42,6 @@ function History() {
     [data],
   );
 
-  // const newDate = highlightsByMonth[0].highlights[0];
-  console.log(highlightsByMonth);
-
   const allYears = useMemo(
     () => Array.from(new Set(allMonths.map((monthYear) => monthYear.split('-')[1]))),
     [allMonths],
@@ -93,11 +90,10 @@ function History() {
         {highlightsByMonth
           .filter(({ year }) => yearState === '' || Number(year) === yearState)
           .map(({ month, year, highlights }) => (
-            // eslint-disable-next-line react/no-array-index-key
             <div key={`history-${month}-${year}`} className="history-month context-highlight">
               <h1 className="history-month-title">{`${month} ${year}`}</h1>
               <ul className="main-highlight">
-                {highlights.map((post) => (
+                {highlights.slice(0, 2).map((post) => (
                   <li className="li-highlight" key={post.id}>
                     <Highlight post={post} />
                   </li>
@@ -105,6 +101,7 @@ function History() {
               </ul>
             </div>
           ))}
+
       </div>
     </>
   );
