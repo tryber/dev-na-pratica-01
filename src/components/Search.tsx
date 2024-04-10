@@ -88,6 +88,7 @@ function Search() {
           <label htmlFor="date-filter">
             Selecionar periodo:
             <select id="date-filter" className="select" name="date" onChange={handleIntersectionParamChange}>
+              <option value="">data</option>
               {availableMonths.map((m) => <option value={m} key={m}>{m.replace('-', '/')}</option>)}
             </select>
           </label>
