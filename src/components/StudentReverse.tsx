@@ -6,6 +6,7 @@ import ImageSvg from "./ImageSvg";
 import Svg from "./Svg";
 import AboutPhrase from "./AboutPhrase";
 
+// codigo reverse
 const StudentReverse: React.FC<StudentProps> = ({ image, student_user }) => {
   return (
     <div className="flex justify-center items-center mb-48 md:mt-32  w-full">
