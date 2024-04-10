@@ -7,6 +7,7 @@ import Svg from "./Svg";
 import AboutPhrase from "./AboutPhrase";
 
 // codigo foto direita
+// codigo novo
 
 const StudentReverse: React.FC<StudentProps> = ({ image, student_user }) => {
   return (
