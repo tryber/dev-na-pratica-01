@@ -3,7 +3,6 @@ import React from 'react'
 const Svg: React.FC<{ linkedin: string }> = ({ linkedin }) => {
   return (
     <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-      <h3 className="text-2xl text-white tracking-wider text-center py-3">
         <a href={linkedin} target="_blank">
           <svg
             className="md:w-48 md:h-32 h-12"
@@ -22,7 +21,6 @@ const Svg: React.FC<{ linkedin: string }> = ({ linkedin }) => {
             ></path>
           </svg>
         </a>
-      </h3>
     </div>
   )
 }
