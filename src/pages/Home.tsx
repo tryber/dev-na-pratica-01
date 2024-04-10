@@ -6,6 +6,7 @@ import DataContext from '../context/DataContext';
 import Highlight from '../components/Highlight';
 import Post from '../types/PostType';
 import '../css/highlight.css';
+import '../index.css';
 
 function Home() {
   const [searchParams] = useSearchParams();
@@ -26,7 +27,7 @@ function Home() {
   }, [data, searchParams]);
 
   return (
-    <>
+    <main className="main-home">
       <Header />
       <Search />
       <section className="context-highlight history-month">
@@ -39,7 +40,7 @@ function Home() {
           ))}
         </ul>
       </section>
-    </>
+    </main>
   );
 }
 
