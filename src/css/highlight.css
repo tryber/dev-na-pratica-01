@@ -23,8 +23,8 @@
 }
 
 .div-highlight {
-    padding: 2%;
     display: flex;
+    padding: 2%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
     align-items: center;
@@ -83,7 +83,7 @@
 }
 
 .img-port {
-    height: 100%;
+    height: 90%;
     background-size: cover;
     background-position: 100% 0;
     transition: 8s;
@@ -110,6 +110,12 @@
     opacity: 0;
     transition: 2s;
     border-radius: 10px;
+}
+
+.a-link {
+    color: hsla(71, 72%, 81%, 0.842);
+    text-decoration: none;
+    font-size: 1.5rem;
 }
   
 .img-port:hover .overlay {

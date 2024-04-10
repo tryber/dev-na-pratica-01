@@ -25,10 +25,7 @@ function HighlightContent({ post }: HighlightProps) {
             ))}
           </div>
           <br />
-          <h3>
-            link:
-            <a href={link} target="_blank" rel="noreferrer">{link}</a>
-          </h3>
+          <a className="a-link" href={link} target="_blank" rel="noreferrer">Saiba mais!</a>
         </div>
         <p>para dispositivo movel click na imagem</p>
       </div>
