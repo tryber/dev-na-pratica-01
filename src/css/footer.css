@@ -47,3 +47,8 @@
     color: #909296;
     text-decoration: none;
 }
+
+.main-footer p {
+    padding-top: 10px;
+    color: #eaebee;
+}
