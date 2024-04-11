@@ -1,16 +1,18 @@
 import React from 'react'
 import Image from "next/image";
+import LinkedinSvg from "./LinkedinSvg";
 
-const ImageSvg: React.FC<{ image: string }> = ({ image }) => {
+const ImageSvg: React.FC<{ image: string, linkedin: string }> = ({ image, linkedin }) => {
   return (
-    <div className="flex relative justify-center rounded-[40px] hover:bg-black/80 group hover:scale-105 ease-in duration-500 flex-col">
+    <div className="flex relative rounded-[40px] m-auto hover:bg-black/80 group hover:scale-105 ease-in duration-500 flex-col w-48 md:w-[240px] lg:w-70 h-full">
       <Image
         src={image}
         alt="foto"
-        className="rounded-[40px] w-48 md:w-[240px] lg:w-70 group-hover:opacity-10 ml-8"
+        className="rounded-[40px] w-48 md:w-[240px] lg:w-70 group-hover:opacity-10"
         width={80}
         height={80}
       />
+      <LinkedinSvg linkedin={linkedin} />
     </div>
   )
 }

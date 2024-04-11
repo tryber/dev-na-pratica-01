@@ -9,6 +9,7 @@ export const data = [
     highlight: true,
     about: John,
     phrase: Johnson,
+    date: 'Abril/2024',
     linkedin: "https://www.linkedin.com/",
     projects: [
       {
@@ -41,6 +42,7 @@ export const data = [
     highlight: true,
     about: Mary,
     phrase: Maryan,
+    date: 'Abril/2024',
     linkedin: "https://www.linkedin.com/",
     projects: [
       {
@@ -73,6 +75,7 @@ export const data = [
     highlight: true,
     about: LuisaAbout,
     phrase: Luisa,
+    date: 'Abril/2024',
     linkedin: "https://www.linkedin.com/",
     projects: [
       {
@@ -105,6 +108,7 @@ export const data = [
     highlight: false,
     about: PedroAbout,
     phrase: Pedro,
+    date: 'Abril/2024',
     linkedin: "https://www.linkedin.com/",
     projects: [
       {
@@ -137,6 +141,7 @@ export const data = [
     highlight: false,
     about: RyanAbout,
     phrase: Ryan,
+    date: 'Abril/2024',
     linkedin: "https://www.linkedin.com/",
     projects: [
       {
@@ -169,6 +174,7 @@ export const data = [
     highlight: false,
     about: DenzelAbout,
     phrase: Denzel,
+    date: 'Abril/2024',
     linkedin: "https://www.linkedin.com/",
     projects: [
       {

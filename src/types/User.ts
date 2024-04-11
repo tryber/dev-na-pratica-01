@@ -8,6 +8,7 @@ export interface User {
   highlight: boolean;
   about: string;
   phrase: string;
+  date:string;
   linkedin: string;
   projects: Project[];
   achievements: Achievement[];

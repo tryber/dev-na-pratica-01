@@ -9,14 +9,18 @@ import AboutPhrase from "./AboutPhrase";
 // codigo foto direita
 // codigo novo
 
-const StudentReverse: React.FC<StudentProps> = ({ image, student_user }) => {
+const Student: React.FC<StudentProps> = ({ image, student_user }) => {
+
   return (
-    <div className="flex justify-center items-center md:mb-48 mb-32 mt-12 md:mt-32 md:w-full mx-4">
+    <div className="justify-center items-center md:mb-48 mb-32 mt-12 md:mt-32 md:w-full m-auto md:w-full w-[85%]">
       <div>
-        <div className="flex flex-row lg:ml-36">
-          <Svg linkedin={student_user.linkedin} />
-          <AboutPhrase name={student_user.name} phrase={student_user.phrase} about={student_user.about} />
-          <ImageSvg image={image} />
+        <div className="flex-col md:flex-row lg:ml-12 hidden md:flex">
+          <AboutPhrase name={student_user.name} phrase={student_user.phrase} about={student_user.about} date={student_user.date}/>
+          <ImageSvg image={image} linkedin={student_user.linkedin} />
+        </div>
+        <div className="flex-col md:hidden flex">
+          <ImageSvg image={image} linkedin={student_user.linkedin} />
+          <AboutPhrase name={student_user.name} phrase={student_user.phrase} about={student_user.about} date={student_user.date}/>
         </div>
         <div className="mt-4">
           <Card user={student_user} />
@@ -26,4 +30,4 @@ const StudentReverse: React.FC<StudentProps> = ({ image, student_user }) => {
   );
 };
 
-export default StudentReverse;
+export default Student;

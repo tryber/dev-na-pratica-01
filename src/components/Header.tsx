@@ -71,7 +71,7 @@ const Header: React.FC = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w[60%] md:w[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w[60%] md:w[45%] h-screen bg-gray-800 p-10 ease-in duration-500"
               : "fixed left-[100%] sm:left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -98,18 +98,18 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="border-b border-gray-300 my-4">
-            <p className="w-[85%] md:w-[90%] py-4 underline underline-offset-2">
+            <p className="w-[85%] md:w-[90%] py-4 underline underline-offset-2 text-white">
               a escola de tecnologia onde você aprende de verdade
             </p>
           </div>
           <div className="py-4 flex flex-col">
             <ul>
               <Link href="/">
-                <li className="text-sm uppercase hover:border-b py-4">Home</li>
+                <li className="text-sm uppercase hover:border-b py-4 text-white">Home</li>
               </Link>
 
               <Link href="/history">
-                <li className="text-sm uppercase hover:border-b py-4">
+                <li className="text-sm uppercase hover:border-b py-4 text-white">
                   History
                 </li>
               </Link>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { User } from "@/types/User";
 import Project from "@/types/Project";
-import App from "./Star";
+import Star from "./Star";
 
 const Card: React.FC<{ user: User }> = ({ user }) => {
   return (
@@ -29,7 +29,7 @@ const CardItem: React.FC<{ project: Project }> = ({ project }) => {
 
   return (
     <div
-      className={`flex justify-center w-24 h-20 md:w-[200px] lg:w-[300px] xl:w-[400px] items-center md:h-40 bg-[#14532d] rounded-lg overflow-hidden relative transition-transform duration-300 transform ${
+      className={`flex justify-center w-24 h-20 md:w-[200px] lg:w-[300px] xl:w-[400px] items-center  md:h-40 bg-[#14532d] rounded-lg overflow-hidden relative transition-transform duration-300 transform ${
         isVisible ? "scale-150" : ""
       }`}
       onMouseOver={handleMouseOver}
@@ -45,17 +45,19 @@ const CardItem: React.FC<{ project: Project }> = ({ project }) => {
           className="absolute inset-0 bg-[#14532d] opacity-90 flex justify-center items-center"
           style={{ zIndex: 3 }}
         >
-          <div className="bg-[#14532d] p-4 rounded-lg w-full h-full shadow-black shadow-lg text-white">
-            <App />
-            <div className="overflow-auto max-h-full">
-              <h3 className="text-lg font-semibold mb-2">Projetos:</h3>
-
-              <div className="mb-4">
-                <p>{project.project}</p>
-                <Link href={project.projectLink}>
-                  <p className="text-blue-500 hover:underline">Ver mais</p>
-                </Link>
-              </div>
+          <div className="bg-[#14532d] p-4 rounded-lg w-full h-full shadow-black shadow-lg text-white hidden md:flex md:flex-col">
+            <div className="overflow-auto max-h-full text-center">
+            <Link href={project.projectLink}>
+              <h3 className="text-lg font-semibold mb-2">{project.project}</h3>
+              </Link>
+            </div>
+            <Star />
+          </div>
+          <div className="bg-[#14532d] p-4 rounded-lg w-full h-full shadow-black shadow-lg text-white md:hidden flex md:flex-col">
+            <div className="overflow-auto max-h-full text-center">
+            <Link href={project.projectLink}>
+              <h3 className="text-lg font-semibold mb-2">{project.project}</h3>
+              </Link>
             </div>
           </div>
         </div>

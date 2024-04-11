@@ -1,9 +1,10 @@
 import React from 'react'
 
-const AboutPhrase: React.FC<{ name: string, about: string, phrase: string }> = ({ name, about, phrase }) => {
+const AboutPhrase: React.FC<{ name: string, about: string, phrase: string, date: string }> = ({ name, about, phrase, date }) => {
   return (
-    <div className="text-white w-3/5 flex-col flex justify-start md:mr-8">
+    <div className="text-white md:w-3/5 flex-col flex justify-start md:ml-8 text-center ml-8">
       <h1 className="text-5xl "> {name}</h1>
+      <h4 className='text-2xl my-2'>mês: {date}</h4>
       <h3 className="text-base md:text-2xl lg:text-3xl mt-2">
         {phrase}
       </h3>
