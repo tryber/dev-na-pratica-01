@@ -41,3 +41,22 @@
     background-color:#373a40;
     height: 40px;
 }
+
+.highlight-link {
+  display: inline-block; /* Garante que o elemento se comporte como um bloco, mas permaneça dentro do fluxo de texto */
+  margin-bottom: 20px; /* Espaçamento inferior para separar dos elementos vizinhos */
+}
+
+.highlight-link__button {
+  display: inline-block;
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  background-color: #4CAF50; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  text-decoration: none; /* Remove sublinhado do link */
+  border-radius: 5px; /* Borda arredondada */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.highlight-link__button:hover {
+  background-color: #45a049; /* Cor de fundo do botão ao passar o mouse */
+}
