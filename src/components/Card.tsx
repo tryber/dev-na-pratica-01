@@ -16,7 +16,7 @@ const Card: React.FC<{ user: User }> = ({ user }) => {
   );
 };
 
-const CardItem: React.FC<{ project: Project }> = ({ project }) => {
+export const CardItem: React.FC<{ project: Project }> = ({ project }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleMouseOver = () => {
@@ -37,6 +37,7 @@ const CardItem: React.FC<{ project: Project }> = ({ project }) => {
       style={{ zIndex: isVisible ? 2 : 1 }}
     >
       <div
+        data-testid="background-image-div"
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${project.image})` }}
       ></div>

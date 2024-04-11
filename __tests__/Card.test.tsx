@@ -2,6 +2,7 @@ import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import { CardItem } from '../src/components/Card'
 import { User } from './mock/User'
+import React from 'react'
  
 describe('Card component', () => {
   it('Should return Card in the component.', () => {

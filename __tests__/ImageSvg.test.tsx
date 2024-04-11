@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import ImageSvg from '../src/components/ImageSvg'
+import React from 'react'
  
 describe('Component ImageSvg', () => {
   it('Should return ImageSvg component.', () => {

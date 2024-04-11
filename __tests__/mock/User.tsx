@@ -26,6 +26,7 @@ const Achievement = [
 export const User = {
   id:1,
   name: 'Pedro',
+  date: '20-04-2001',
   image: 'linked.png',
   highlight: false,
   about: 'description',

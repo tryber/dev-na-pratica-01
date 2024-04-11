@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import Footer from '../src/components/Footer'
+import React from 'react'
  
 describe('Footer component', () => {
   it('Should return component Footer.', () => {

@@ -1,8 +1,9 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import Student from '../src/components/Student'
-import StudentReverse from '@/components/StudentReverse'
+import StudentReverse from '../src/components/StudentReverse'
 import { User } from './mock/User'
+import React from 'react'
  
 describe('Student component', () => {
   it('Should return Student in the component.', () => {
