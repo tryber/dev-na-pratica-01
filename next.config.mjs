@@ -3,9 +3,9 @@
 const nextConfig = {
   // basePath: '/dev-na-pratica-01',
   output: 'export',
-  // images: {
-  //   unoptimized: true,
-  // },
+  images: {
+    unoptimized: true,
+  },
   // reactStrictMode: true,
 };
 
