@@ -49,6 +49,14 @@
 }
 
 .main-footer p {
+    text-align: center;
     padding-top: 10px;
     color: #eaebee;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        gap: 1.5rem;
+    }    
 }
