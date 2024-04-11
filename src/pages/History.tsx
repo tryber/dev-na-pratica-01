@@ -9,6 +9,7 @@ import Highlight from '../components/Highlight';
 
 import './historyStyle.css';
 import '../index.css';
+import Footer from '../components/Footer';
 
 type HighlightByMonth = {
   month: string;
@@ -100,6 +101,7 @@ function History() {
             </article>
           ))}
       </section>
+      <Footer />
     </main>
   );
 }
