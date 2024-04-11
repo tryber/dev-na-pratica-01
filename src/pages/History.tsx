@@ -1,15 +1,14 @@
-import {
+import React, {
   useContext, useEffect, useMemo, useState,
 } from 'react';
-// import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import DataContext from '../context/DataContext';
 import Post from '../types/PostType';
 import Highlight from '../components/Highlight';
+import Footer from '../components/Footer';
 
 import './historyStyle.css';
 import '../index.css';
-import Footer from '../components/Footer';
 
 type HighlightByMonth = {
   month: string;
@@ -48,6 +47,8 @@ function History() {
     [allMonths],
   );
 
+  const [yearState, setYearState] = useState<number | ''>('');
+
   useEffect(() => {
     setHighlightsByMonth(
       allMonths.map((monthYear) => {
@@ -62,8 +63,6 @@ function History() {
     );
   }, [data, allMonths]);
 
-  const [yearState, setYearState] = useState<number | ''>('');
-
   return (
     <main className="main-home">
       <Header />
@@ -71,19 +70,20 @@ function History() {
         <h2>Escolha o período desejado</h2>
         <select
           value={yearState}
-          onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
-            setYearState(Number(event.target.value));
-          }}
+          onChange={({ target: { value } }) => setYearState(Number(value))}
           className="history-form-select"
           name="tags"
         >
-          <option disabled selected value="">Selecione uma opção</option>
-          {allYears
-            .map((yearOption) => (
-              <option key={yearOption}>{yearOption}</option>
-            ))}
+          <option value="">Selecione uma opção</option>
+          {allYears.map((yearOption) => (
+            <option key={yearOption} value={yearOption}>
+              {yearOption}
+            </option>
+          ))}
         </select>
-        <button className="history-clean-button" type="button" onClick={() => setYearState('')}>Limpar Filtro</button>
+        <button className="history-clean-button" type="button" onClick={() => setYearState('')}>
+          Limpar Filtro
+        </button>
       </form>
       <section className="history">
         {highlightsByMonth
@@ -98,6 +98,14 @@ function History() {
                   </li>
                 ))}
               </ul>
+              <span className="highlight-link">
+                {
+                  highlights.slice(0, 1).map((index) => (
+                    <a key={index.date.day} href={`/home?date=${index.date.month}-${index.date.year}`} className="highlight-link__button">SAIBA MAIS</a>
+                  ))
+                }
+              </span>
+
             </article>
           ))}
       </section>
