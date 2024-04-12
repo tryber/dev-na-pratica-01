@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Next.js App
 
-## Getting Started
+Este repositório contém uma aplicação frontend desenvolvida em Next.js. É um site simples, porém impactante, que exibe as pessoas destaques do mês atual, com links para seus feitos notáveis. Além disso, o site contém uma página separada para visualizar o histórico de meses anteriores.
 
-First, run the development server:
+### Scripts Disponíveis
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev        # Inicia o servidor de desenvolvimento do Next.js.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+npm run build      # Compila a aplicação para produção.
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm start          # Inicia a aplicação em um ambiente de produção.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run lint       # Executa a verificação de linting usando o Next.js.
+```
 
-## Learn More
+```bash
+npm run lint:css   # Executa a verificação de linting específica para arquivos CSS usando o Stylelint.
+```
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm test           # Executa os testes da aplicação utilizando o Jest.
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Como Utilizar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone este repositório.
+2. Instale as dependências do projeto: `npm install`.
+3. Execute os scripts conforme necessário para desenvolver, construir, executar e testar a aplicação.
 
-## Deploy on Vercel
+### Observações
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Certifique-se de ter o Node.js e o npm instalados globalmente em seu sistema.
+- Este projeto utiliza Next.js para a construção de aplicativos da web do lado do servidor e Jest para testes de unidade.
+- O linting é configurado para manter a consistência no código-fonte, garantindo boas práticas de programação.
+- Os testes são essenciais para garantir a integridade e qualidade do código.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

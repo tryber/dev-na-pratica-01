@@ -76,9 +76,13 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v2  # Use the latest version of the upload artifact action
         with:
-          path: ./out
+          name: nextjs-build
+          path: |
+            out
+            # Adicione o diretório de imagens ao artefato
+            out/_next/static/media
 
   # Deployment job
   deploy:
