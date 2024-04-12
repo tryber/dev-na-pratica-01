@@ -4,7 +4,7 @@
 const nextConfig = {
   output: 'export',
   images: {
-    // unoptimized: false,
+    unoptimized: true,
     loader: 'custom'
   },
   // webpack: (config, { isServer }) => {
