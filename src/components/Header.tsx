@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import imageLoader from "../../imageLoader";
 
 const Header: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
@@ -30,7 +31,7 @@ const Header: React.FC = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 text-white">
-        <Image src="/logo-trybe.png" alt="Logo" width="100" height="5" />
+        <Image loader={({ src, width, quality }) => `${src}?w=${width}&q=${quality || 75}`} src="/logo-trybe.png" alt="Logo" width="100" height="5" />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
