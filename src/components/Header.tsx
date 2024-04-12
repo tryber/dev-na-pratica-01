@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// componente header com links, uma navBar
 const Header: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
   const [shadow, SetShadow] = useState(false);
@@ -10,8 +9,6 @@ const Header: React.FC = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-
-  // use effect para esconder shadow da barra sem scrolar
 
   useEffect(() => {
     const handleShadow = () => {
@@ -33,7 +30,8 @@ const Header: React.FC = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 text-white">
-        <Image src="/logo-trybe.png" alt="Logo" width="100" height="5" />
+        {/* Ajustando a importação da imagem */}
+        <Image src="/_next/static/media/logo-trybe.[hash].png" alt="Logo" width="100" height="5" />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -77,7 +75,8 @@ const Header: React.FC = () => {
           }
         >
           <div className="flex justify-between w-full items-center">
-            <Image src="/logo-trybe.png" alt="Logo" width="80" height="35" />
+            {/* Ajustando a importação da imagem */}
+            <Image src="/_next/static/media/logo-trybe.[hash].png" alt="Logo" width="80" height="35" />
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
