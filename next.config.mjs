@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+import CopyPlugin from 'copy-webpack-plugin';
 
 const nextConfig = {
   output: 'export',
@@ -6,23 +6,20 @@ const nextConfig = {
     unoptimized: true,
   },
   webpack: (config, { isServer }) => {
-    // Adiciona um loader específico para imagens
-    config.module.rules.push({
-      test: /\.(png|jpe?g|gif|svg|webp)$/i,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            publicPath: '/_next',
-            name: 'static/media/[name].[hash].[ext]',
+    // Adiciona o plugin para copiar arquivos de imagem para o diretório de saída
+    config.plugins.push(
+      new CopyPlugin({
+        patterns: [
+          {
+            from: 'public/', // Caminho dos arquivos de imagem na pasta public
+            to: 'static/media', // Caminho de saída para os arquivos de imagem no diretório de build
           },
-        },
-      ],
-    });
+        ],
+      })
+    );
 
     return config;
   },
-  // reactStrictMode: true,
 };
 
 export default nextConfig;
