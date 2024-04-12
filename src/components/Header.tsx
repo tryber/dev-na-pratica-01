@@ -31,7 +31,7 @@ const Header: React.FC = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 text-white">
-        <Image loader={imageLoader} src="/logo-trybe.png" alt="Logo" width={100} height={5} />
+        <img src="/logo-trybe.png" alt="Logo" width={100} height={5} />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
