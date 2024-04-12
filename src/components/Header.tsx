@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+// componente header com links, uma navBar
 const Header: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
   const [shadow, SetShadow] = useState(false);

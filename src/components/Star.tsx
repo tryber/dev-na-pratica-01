@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TStar, StarProps } from '../types/Stars';
 
-
+// componente que recebe as notas dos usuários ao clicar nas estrelas
 const Star: React.FC<StarProps> = ({ selected, onClick }) => (
   <span
     className={`text-3xl cursor-pointer ${selected ? 'text-yellow-500' : 'text-gray-800'

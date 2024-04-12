@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+// componente que renderiza o logo do linkedin
 const LinkedinSvg: React.FC<{ linkedin: string }> = ({ linkedin }) => {
   return (
     <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">

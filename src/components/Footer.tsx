@@ -1,5 +1,6 @@
 import React from 'react';
 
+// componente rodapé
 const Footer: React.FC = () => {
   return (
     <footer className="flex flex-grow items-center justify-center bg-headerAndFooterBackground text-white h-auto">

@@ -4,6 +4,7 @@ import Headline from "@/components/Headline";
 import Footer from "@/components/Footer";
 import StudentsRender from "@/utils/StudentsRender";
 
+// página que mostra as histórias dos estudantes
 const History: React.FC = () => {
   return (
     <>

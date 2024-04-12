@@ -4,6 +4,8 @@ import { User } from "@/types/User";
 import Project from "@/types/Project";
 import Star from "./Star";
 
+
+// função que renderiza os projetos do estudante
 const Card: React.FC<{ user: User }> = ({ user }) => {
   return (
     <div className="container mx-auto lg:mt-8">
@@ -16,6 +18,7 @@ const Card: React.FC<{ user: User }> = ({ user }) => {
   );
 };
 
+// função que renderiza os projetos do estudante e cria o efeito de zoom na tela
 export const CardItem: React.FC<{ project: Project }> = ({ project }) => {
   const [isVisible, setIsVisible] = useState(false);
 

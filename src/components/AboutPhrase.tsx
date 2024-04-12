@@ -1,5 +1,6 @@
 import React from 'react'
 
+// componente que diz sobre o estudante
 const AboutPhrase: React.FC<{ name: string, about: string, phrase: string, date: string }> = ({ name, about, phrase, date }) => {
   return (
     <div className="text-white md:w-3/5 flex-col flex justify-start md:ml-8 text-center ml-8">

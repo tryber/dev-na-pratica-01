@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 
+// componente intermediário e que faz o efeito de dark mode
 const Headline: React.FC<HeadlineProps> = ({ title }) => {
   const [dark, setDark] = useState<boolean>(false);
 
