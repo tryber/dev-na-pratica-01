@@ -1,9 +1,11 @@
 // import CopyPlugin from 'copy-webpack-plugin';
+// import imageLoader from './imageLoader';
 
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true,
+    // unoptimized: false,
+    loader: 'custom'
   },
   // webpack: (config, { isServer }) => {
   //   // Adiciona o plugin para copiar arquivos de imagem para o diretório de saída

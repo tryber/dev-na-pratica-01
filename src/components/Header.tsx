@@ -76,7 +76,7 @@ const Header: React.FC = () => {
         >
           <div className="flex justify-between w-full items-center">
             {/* Ajustando a importação da imagem */}
-            <Image src="/aprendizagem.jpeg" alt="Logo" width="80" height="35" />
+            <Image loader={imageLoader} src="/aprendizagem.jpeg" alt="Logo" width="80" height="35" />
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
