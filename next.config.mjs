@@ -1,12 +1,26 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === 'production'
-
 const nextConfig = {
-  basePath: isProd ? '/dev': '',
   output: 'export',
   images: {
     unoptimized: true,
+  },
+  webpack: (config, { isServer }) => {
+    // Adiciona um loader específico para imagens
+    config.module.rules.push({
+      test: /\.(png|jpe?g|gif|svg|webp)$/i,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            publicPath: '/_next',
+            name: 'static/media/[name].[hash].[ext]',
+          },
+        },
+      ],
+    });
+
+    return config;
   },
   // reactStrictMode: true,
 };
