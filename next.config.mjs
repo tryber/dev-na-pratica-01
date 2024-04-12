@@ -1,27 +1,26 @@
-// import CopyPlugin from 'copy-webpack-plugin';
-// import imageLoader from './imageLoader';
+import path from 'path';
 
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
-    loader: 'custom'
+    loader: 'custom',
   },
-  // webpack: (config, { isServer }) => {
-  //   // Adiciona o plugin para copiar arquivos de imagem para o diretório de saída
-  //   config.plugins.push(
-  //     new CopyPlugin({
-  //       patterns: [
-  //         {
-  //           from: 'public/', // Caminho dos arquivos de imagem na pasta public
-  //           to: 'static/media', // Caminho de saída para os arquivos de imagem no diretório de build
-  //         },
-  //       ],
-  //     })
-  //   );
+  webpack(config, { isServer }) {
+    const outputPath = path.resolve(process.cwd(), 'public');
 
-  //   return config;
-  // },
+    config.module.rules.push({
+      test: /\.(jpe?g|png|gif|svg|ico)$/i,
+      loader: 'file-loader',
+      options: {
+        outputPath,
+        publicPath: '/_next/static/images',
+        name: '[name].[ext]',
+      },
+    });
+
+    return config;
+  },
 };
 
 export default nextConfig;
