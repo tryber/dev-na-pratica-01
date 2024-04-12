@@ -30,8 +30,7 @@ const Header: React.FC = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 text-white">
-        {/* Ajustando a importação da imagem */}
-        <Image src="/_next/static/media/logo-trybe.[hash].png" alt="Logo" width="100" height="5" />
+        <Image src="/_next/static/media/logo-trybe.png" alt="Logo" width="100" height="5" />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
