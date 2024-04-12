@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
-  // basePath: '/dev-na-pratica-01',
+  basePath: isProd ? '/dev': '',
   output: 'export',
   images: {
     unoptimized: true,

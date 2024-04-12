@@ -1,9 +1,7 @@
 import React from "react";
 import Card from "./Card";
-import Image from "next/image";
 import { StudentProps } from "@/types/StudentsProps";
 import ImageSvg from "./ImageSvg";
-import Svg from "./Svg";
 import AboutPhrase from "./AboutPhrase";
 
 // codigo reverse
