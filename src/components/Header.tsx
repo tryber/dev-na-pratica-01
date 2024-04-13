@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { basePath } from "@/utils/basePath";
 
 const Header: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
@@ -30,7 +31,7 @@ const Header: React.FC = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 text-white">
-        <Image src="/logo-trybe.png" alt="Logo" width={100} height={5} />
+        <Image src={`${basePath}/logo-trybe.png`} alt="Logo" width={100} height={5} />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -74,7 +75,7 @@ const Header: React.FC = () => {
           }
         >
           <div className="flex justify-between w-full items-center">
-            <Image src="/aprendizagem.jpeg" alt="Logo" width="80" height="35" />
+            <Image src={`${basePath}/logo-trybe.png`} alt="Logo" width="80" height="35" />
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
