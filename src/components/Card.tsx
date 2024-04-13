@@ -3,6 +3,7 @@ import Link from "next/link";
 import { User } from "@/types/User";
 import Project from "@/types/Project";
 import Star from "./Star";
+import { basePath } from "@/utils/basePath";
 
 
 // função que renderiza os projetos do estudante
@@ -42,7 +43,7 @@ export const CardItem: React.FC<{ project: Project }> = ({ project }) => {
       <div
         data-testid="background-image-div"
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${project.image})` }}
+        style={{ backgroundImage: `url(${basePath}/${project.image})` }}
       ></div>
       {isVisible && (
         <div
