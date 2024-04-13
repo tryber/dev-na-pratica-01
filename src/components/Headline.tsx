@@ -2,6 +2,7 @@ import HeadlineProps from "@/types/HeadlineProps";
 import React from "react";
 import Image from "next/image";
 import { useState } from "react";
+import { basePath } from "@/utils/basePath";
 
 // componente intermediário e que faz o efeito de dark mode
 const Headline: React.FC<HeadlineProps> = ({ title }) => {
@@ -16,7 +17,7 @@ const Headline: React.FC<HeadlineProps> = ({ title }) => {
       <button type="button" onClick={() => setDark(!dark)}>
         <Image
           className="ml-5 rounded-2xl"
-          src="https://svgsilh.com/svg/1774834.svg"
+          src={`${basePath}/https://svgsilh.com/svg/1774834.svg`}
           width={50}
           height={100}
           alt="Image svg title"
